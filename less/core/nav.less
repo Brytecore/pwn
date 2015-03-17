@@ -1,35 +1,20 @@
 .nav-menu {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1000;
-
-	.brand {
-		float: left;
-	}
 
 	.menu {
-		float: right;
-
 		ul {
 			list-style-type: none;
-			float: right;
 			padding: 0;
 			margin: 0;
-			margin-right: 12px;
 
 			li {
-				float: right;
 				margin: 0;
 				padding: 0;
 
 				a {
 					display: block;
-					padding: 8px 12px;
-					font-size: 11px;
-					text-transform: uppercase;
-					line-height: 1em;
+					padding: .5em .75em;
+					font-size: .9em;
+					line-height: 1.8em;
 
 					a:hover {
 						text-decoration: underline;
@@ -37,18 +22,49 @@
 				}
 			}
 		}
+	}
 
-		.btn {
-			float: right;
+	&.fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1000;
+
+		.brand {
+			float: left;
 		}
 
-		.xs({
-			display: none;
-		});
+		.menu {
+			float: right;
 
-		.sm({
-			display: block;
-		});
+			ul {
+				float: right;
+				margin-right: 12px;
+
+				li {
+					float: right;
+
+					a {
+						font-size: .7em;
+						text-transform: uppercase;
+						line-height: 1em;
+
+						a:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+
+			.btn {
+				float: right;
+			}
+
+			.xs({ display: none; });
+
+			.sm({ display: block; });
+		}
 	}
 }
 

@@ -1049,51 +1049,62 @@ a:hover {
 ul li {
   line-height: 1.7em;
 }
-.nav-menu {
+.nav-menu .menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-menu .menu ul li {
+  margin: 0;
+  padding: 0;
+}
+.nav-menu .menu ul li a {
+  display: block;
+  padding: .5em .75em;
+  font-size: .9em;
+  line-height: 1.8em;
+}
+.nav-menu .menu ul li a a:hover {
+  text-decoration: underline;
+}
+.nav-menu.fixed {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
 }
-.nav-menu .brand {
+.nav-menu.fixed .brand {
   float: left;
 }
-.nav-menu .menu {
+.nav-menu.fixed .menu {
   float: right;
 }
-.nav-menu .menu ul {
-  list-style-type: none;
+.nav-menu.fixed .menu ul {
   float: right;
-  padding: 0;
-  margin: 0;
   margin-right: 12px;
 }
-.nav-menu .menu ul li {
+.nav-menu.fixed .menu ul li {
   float: right;
-  margin: 0;
-  padding: 0;
 }
-.nav-menu .menu ul li a {
-  display: block;
-  padding: 8px 12px;
-  font-size: 11px;
+.nav-menu.fixed .menu ul li a {
+  font-size: .7em;
   text-transform: uppercase;
   line-height: 1em;
 }
-.nav-menu .menu ul li a a:hover {
+.nav-menu.fixed .menu ul li a a:hover {
   text-decoration: underline;
 }
-.nav-menu .menu .btn {
+.nav-menu.fixed .menu .btn {
   float: right;
 }
 @media screen and (min-width: 200px) {
-  .nav-menu .menu {
+  .nav-menu.fixed .menu {
     display: none;
   }
 }
 @media screen and (min-width: 568px) {
-  .nav-menu .menu {
+  .nav-menu.fixed .menu {
     display: block;
   }
 }
