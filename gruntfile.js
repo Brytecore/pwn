@@ -14,7 +14,7 @@ module.exports = function( grunt ) {
 				preserveComments: "some"
 			}, build: {
 				files: {
-					"dist/pwn.min.js": ["dist/js/pwn.js"]
+					"dist/js/pwn.min.js": ["dist/js/pwn.js"]
 				}
 			}
 		},
