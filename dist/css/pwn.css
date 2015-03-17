@@ -1027,6 +1027,10 @@ h1 {
 h2 {
   font-size: 2em;
 }
+h3 {
+  font-family: 400;
+  font-size: 1.7em;
+}
 img {
   max-width: 100%;
 }
