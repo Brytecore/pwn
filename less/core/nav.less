@@ -1,0 +1,59 @@
+.nav-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+
+	.brand {
+		float: left;
+	}
+
+	.menu {
+		float: right;
+
+		ul {
+			list-style-type: none;
+			float: right;
+			padding: 0;
+			margin: 0;
+			margin-right: 12px;
+
+			li {
+				float: right;
+				margin: 0;
+				padding: 0;
+
+				a {
+					display: block;
+					padding: 8px 12px;
+					font-size: 11px;
+					text-transform: uppercase;
+					line-height: 1em;
+
+					a:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+
+		.btn {
+			float: right;
+		}
+
+		.xs({
+			display: none;
+		});
+
+		.sm({
+			display: block;
+		});
+	}
+}
+
+@media print {
+	.nav-menu {
+		position: absolute;
+	}
+}

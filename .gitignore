@@ -6,4 +6,7 @@
 desktop.ini
 
 # PHPStorm/WebStorm
-/.idea/
+.idea
+
+# Node
+node_modules

@@ -1,0 +1,52 @@
+/*
+	These mixins wrap your ruleset in a media query at the root.
+
+	Example:
+	.header {
+		.xs({
+			color: red;
+		})
+	};
+
+	Prints:
+	@media screen and (min-width: 20em) {
+		.header {
+			color: red;
+		}
+	}
+*/
+
+// -xs- ( 320px )
+.xs( @rules ) {
+	@media screen and ( min-width: 200px ) {
+		@rules();
+	}
+}
+
+// -sm- ( 568px )
+.sm( @rules ) {
+	@media screen and ( min-width: 568px ) {
+		@rules();
+	}
+}
+
+// -md- ( 768px )
+.md( @rules ) {
+	@media screen and ( min-width: 768px ) {
+		@rules();
+	}
+}
+
+// -lg- ( 1024px )
+.lg( @rules ) {
+	@media screen and ( min-width: 1024px ) {
+		@rules();
+	}
+}
+
+// -xl- ( 1280px )
+.xl( @rules ) {
+	@media screen and ( min-width: 1280px ) {
+		@rules();
+	}
+}

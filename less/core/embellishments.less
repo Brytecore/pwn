@@ -1,0 +1,37 @@
+span.caret-up,
+span.caret-down {
+	display: inline-block;
+
+	&:after {
+		content: "";
+		display: block;
+		margin-left: 4px;
+		margin-top: -6px;
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+	}
+}
+
+span.caret-up:after {
+	border-bottom: 4px solid @text-color;
+}
+
+span.caret-down:after {
+	border-top: 4px solid @text-color;
+}
+
+// "Not yet implemented" box
+.nyi {
+	padding: 40px;
+	background-color: fade( @color-information, 10% );
+
+	&:before {
+		color: @color-information;
+		content: "Not Yet Implemented";
+		display: block;
+		font-weight: 700;
+		font-size: 13px;
+		padding-bottom: 12px;
+		text-transform: uppercase;
+	}
+}
