@@ -6,7 +6,7 @@ module.exports = function( grunt ) {
 			pwn_js: {
 				src: [
 					"js/**/*.js"
-				], dest: "dist/pwn.js"
+				], dest: "dist/js/pwn.js"
 			}
 		},
 		uglify: {
@@ -14,19 +14,19 @@ module.exports = function( grunt ) {
 				preserveComments: "some"
 			}, build: {
 				files: {
-					"dist/pwn.min.js": ["dist/pwn.js"]
+					"dist/pwn.min.js": ["dist/js/pwn.js"]
 				}
 			}
 		},
 		less: {
 			pwn_less: {
 				src: "less/pwn.less",
-				dest: "dist/pwn.css"
+				dest: "dist/css/pwn.css"
 			}
 		}, cssmin: {
 			pwn_css: {
-				src: "dist/pwn.css",
-				dest: "dist/pwn.min.css"
+				src: "dist/css/pwn.css",
+				dest: "dist/css/pwn.min.css"
 			}
 		},
 		watch: {
