@@ -1183,7 +1183,7 @@ span.caret-down:after {
   border-top: 4px solid #555555;
 }
 .nyi {
-  padding: 40px;
+  padding: 1em;
   background-color: rgba(38, 169, 224, 0.1);
 }
 .nyi:before {
@@ -1191,9 +1191,10 @@ span.caret-down:after {
   content: "Not Yet Implemented";
   display: block;
   font-weight: 700;
-  font-size: 13px;
+  font-size: .8em;
   padding-bottom: 12px;
   text-transform: uppercase;
+  line-height: 1.5em;
 }
 .date-picker {
   width: 170px;
