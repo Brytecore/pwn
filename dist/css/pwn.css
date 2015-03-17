@@ -1055,6 +1055,7 @@ ul li {
   margin: 0;
 }
 .nav-menu .menu ul li {
+  display: inline-block;
   margin: 0;
   padding: 0;
 }
@@ -1067,46 +1068,51 @@ ul li {
 .nav-menu .menu ul li a a:hover {
   text-decoration: underline;
 }
-.nav-menu.fixed {
+.nav-menu.centered .menu ul {
+  text-align: center;
+}
+.nav-menu.mini-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
 }
-.nav-menu.fixed .brand {
+.nav-menu.mini-nav .menu {
   float: left;
 }
-.nav-menu.fixed .menu {
-  float: right;
+.nav-menu.mini-nav .menu ul {
+  float: left;
 }
-.nav-menu.fixed .menu ul {
-  float: right;
-  margin-right: 12px;
+.nav-menu.mini-nav .menu ul li {
+  float: left;
 }
-.nav-menu.fixed .menu ul li {
-  float: right;
-}
-.nav-menu.fixed .menu ul li a {
+.nav-menu.mini-nav .menu ul li a {
   font-size: .7em;
   text-transform: uppercase;
   line-height: 1em;
 }
-.nav-menu.fixed .menu ul li a a:hover {
+.nav-menu.mini-nav .menu ul li a a:hover {
   text-decoration: underline;
 }
-.nav-menu.fixed .menu .btn {
-  float: right;
-}
 @media screen and (min-width: 200px) {
-  .nav-menu.fixed .menu {
+  .nav-menu.mini-nav .menu {
     display: none;
   }
 }
 @media screen and (min-width: 568px) {
-  .nav-menu.fixed .menu {
+  .nav-menu.mini-nav .menu {
     display: block;
   }
+}
+.nav-menu.mini-nav.right .menu {
+  float: right;
+}
+.nav-menu.mini-nav.right .menu ul {
+  float: right;
+}
+.nav-menu.mini-nav.right .menu ul li {
+  float: right;
 }
 @media print {
   .nav-menu {
