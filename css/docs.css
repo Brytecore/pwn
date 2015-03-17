@@ -55,6 +55,10 @@
 	width: 32px;
 }
 
+.docs-home .nyi {
+	margin-top: 2em;
+}
+
 .docs-home .nyi:before {
 	content: "Use at your own risk";
 }
