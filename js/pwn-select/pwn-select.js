@@ -16,7 +16,7 @@
 			var field = $( "<div class='pwn-select-value'></div>" );
 			var ddl = $( "<div class='pwn-select-list'></div>" );
 			var arrow_cont = $( "<div class='pwn-select-arrow'></div>" );
-			var arrow = $( "<img src='/stylesheets/pwn/images/select-arrow.png'>" );
+			var arrow = $( "<img src='../images/select-arrow.png'>" );
 
 			var current_value, current_text, current_option;
 
