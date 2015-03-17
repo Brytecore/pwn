@@ -1017,10 +1017,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 2.5em;
   font-family: "lato", sans-serif;
   font-weight: 300;
   color: #555555;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
 }
 img {
   max-width: 100%;
