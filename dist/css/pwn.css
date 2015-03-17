@@ -1183,8 +1183,9 @@ span.caret-down:after {
   border-top: 4px solid #555555;
 }
 .nyi {
-  padding: 1em;
+  padding: 2em;
   background-color: rgba(38, 169, 224, 0.1);
+  line-height: 1.5em;
 }
 .nyi:before {
   color: #26a9e0;
@@ -1194,7 +1195,6 @@ span.caret-down:after {
   font-size: .8em;
   padding-bottom: 12px;
   text-transform: uppercase;
-  line-height: 1.5em;
 }
 .date-picker {
   width: 170px;
