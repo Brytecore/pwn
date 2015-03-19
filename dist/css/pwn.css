@@ -1072,9 +1072,12 @@ ul li {
 .nav-menu .menu ul li span a:hover {
   text-decoration: underline;
 }
+.nav-menu .menu ul li.brand a {
+  padding: 0;
+}
 .nav-menu .menu ul li.brand .logo {
-  height: 29px;
-  width: 29px;
+  height: 28px;
+  width: 28px;
 }
 .nav-menu .menu ul li.brand .logo img {
   display: inline;
