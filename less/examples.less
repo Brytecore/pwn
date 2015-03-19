@@ -1,0 +1,45 @@
+.example {
+	padding: 2.5em 1.25em 1.25em;
+	margin-top: 20px;
+	border: 1px solid @color-divider;
+	background-color: #f5f5f5;
+	position: relative;
+
+	&:before {
+		content: "Example";
+		text-transform: uppercase;
+		font-size: .8em;
+		color: #989898;
+		padding: 0 0 10px;
+		position: absolute;
+		top: 4px;
+		left: 20px;
+		font-weight: 700;
+	}
+
+	.syntax {
+		border-top: 1px solid @color-divider;
+		background-color: #fff;
+		padding: 1.6em 0 0;
+		margin: 1.25em -1.25em -1.25em;
+		.clearfix();
+		position: relative;
+
+		&:before {
+			content: "Syntax";
+			text-transform: uppercase;
+			font-size: .8em;
+			color: #989898;
+			padding: 0 0 10px;
+			position: absolute;
+			top: 4px;
+			left: 20px;
+			font-weight: 700;
+		}
+	}
+}
+
+.syntaxhighlighter code,
+.syntaxhighlighter div {
+	line-height: 1.5em !important;
+}

@@ -5,8 +5,15 @@ module.exports = function( grunt ) {
 		concat: {
 			js: {
 				src: [
-					"js/**/*.js"
+					"js/src/**/*.js"
 				], dest: "js/pwn-docs.js"
+			},
+			libs: {
+				src: [
+					"libraries/sh/shCore.js",
+					"libraries/sh/shBrushJScript.js",
+					"libraries/sh/shBrushXML.js"
+				], dest: "js/docs-libs.js"
 			}
 		},
 		uglify: {
@@ -14,7 +21,8 @@ module.exports = function( grunt ) {
 				preserveComments: "some"
 			}, build: {
 				files: {
-					"dist/js/pwn.min.js": ["js/pwn-docs.js"]
+					"js/pwn-docs.min.js": ["js/pwn-docs.js"],
+					"js/docs-libs.min.js": ["js/docs-libs.js"]
 				}
 			}
 		},
@@ -23,15 +31,22 @@ module.exports = function( grunt ) {
 				src: "less/docs.less",
 				dest: "css/docs.css"
 			}
-		}, cssmin: {
+		},
+		cssmin: {
 			pwn_css: {
 				src: "css/docs.css",
 				dest: "css/docs.min.css"
+			},
+			libs: {
+				src: [
+					"libraries/sh/shCore.css",
+					"libraries/sh/shThemeDefault.css"
+				], dest: "css/docs-libs.min.css"
 			}
 		},
 		watch: {
 			js: {
-				files: ["js/**/*.js"],
+				files: ["js/src/**/*.js"],
 				tasks: ["build-js"]
 			},
 			less: {
@@ -43,7 +58,9 @@ module.exports = function( grunt ) {
 
 	grunt.registerTask( "default", [] );
 
-	grunt.registerTask( "build", ["build-js", "build-less" ] );
-	grunt.registerTask( "build-js", ["concat", "uglify"] );
-	grunt.registerTask( "build-less", ["less", "cssmin"] );
+	grunt.registerTask( "build", ["build-js", "build-less", "build-libs-js", "build-libs-css"] );
+	grunt.registerTask( "build-js", ["concat:js", "uglify"] );
+	grunt.registerTask( "build-less", ["less", "cssmin:pwn_css"] );
+	grunt.registerTask( "build-libs-js", ["concat:libs", "uglify"] );
+	grunt.registerTask( "build-libs-css", ["cssmin:libs"] );
 };

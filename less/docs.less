@@ -1,3 +1,5 @@
+@import "mixins";
+
 @color-hero: #efefef;
 @color-hero-h1: #122340;
 @color-hero-h2: #27a9e0;
@@ -10,6 +12,12 @@
 @color-footer-text: #bbb;
 @color-footer-a: #72a6b7;
 
+h2 {
+	font-weight: 400;
+	border-bottom: 1px solid @color-divider;
+	padding-bottom: .5em;
+}
+
 .docs-hero {
 	background: @color-hero;
 	padding: 60px 0;
@@ -21,8 +29,10 @@
 	}
 
 	h2 {
+		font-weight: 300;
 		text-align: center;
 		color: @color-hero-h2;
+		border-bottom: none;
 	}
 }
 
@@ -89,6 +99,7 @@
 
 	h1 {
 		color: @color-header-h1;
+		font-weight: 400;
 	}
 
 	p {
@@ -96,3 +107,5 @@
 		font-size: 1.4em;
 	}
 }
+
+@import "examples";

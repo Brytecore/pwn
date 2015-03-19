@@ -1,3 +1,8 @@
+h2 {
+  font-weight: 400;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: .5em;
+}
 .docs-hero {
   background: #efefef;
   padding: 60px 0;
@@ -8,8 +13,10 @@
   line-height: 1.3em;
 }
 .docs-hero h2 {
+  font-weight: 300;
   text-align: center;
   color: #27a9e0;
+  border-bottom: none;
 }
 .docs-home h3 {
   margin-top: 2em;
@@ -58,8 +65,57 @@
 }
 .docs-header h1 {
   color: #ffffff;
+  font-weight: 400;
 }
 .docs-header p {
   color: #ffffff;
   font-size: 1.4em;
+}
+.example {
+  padding: 2.5em 1.25em 1.25em;
+  margin-top: 20px;
+  border: 1px solid #eaeaea;
+  background-color: #f5f5f5;
+  position: relative;
+}
+.example:before {
+  content: "Example";
+  text-transform: uppercase;
+  font-size: .8em;
+  color: #989898;
+  padding: 0 0 10px;
+  position: absolute;
+  top: 4px;
+  left: 20px;
+  font-weight: 700;
+}
+.example .syntax {
+  border-top: 1px solid #eaeaea;
+  background-color: #fff;
+  padding: 1.6em 0 0;
+  margin: 1.25em -1.25em -1.25em;
+  position: relative;
+}
+.example .syntax:before,
+.example .syntax:after {
+  content: " ";
+  display: table;
+}
+.example .syntax:after {
+  clear: both;
+}
+.example .syntax:before {
+  content: "Syntax";
+  text-transform: uppercase;
+  font-size: .8em;
+  color: #989898;
+  padding: 0 0 10px;
+  position: absolute;
+  top: 4px;
+  left: 20px;
+  font-weight: 700;
+}
+.syntaxhighlighter code,
+.syntaxhighlighter div {
+  line-height: 1.5em !important;
 }
