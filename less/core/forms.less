@@ -1,3 +1,225 @@
+.form {
+	max-width: 100%;
+	margin: 60px auto 0;
+
+	label {
+		text-align: left;
+		text-transform: uppercase;
+		line-height: 2em;
+		display: block;
+	}
+
+	input[type=text],
+	input[type=password],
+	input[type=email],
+	input[type=tel],
+	input[type=number],
+	input[type=date],
+	input[type=range],
+	input[type=search],
+	input[type=url],
+	textarea {
+		border: 1px solid #e9e9e9;
+		font-family: "proxima-nova", sans-serif;
+		color: #333;
+		padding: 8px 12px;
+		font-size: 17px;
+		line-height: 21px;
+		display: block;
+		margin: 0 0 12px;
+		width: 100%;
+
+		&:focus {
+			outline: none;
+			-moz-box-shadow: 0 0 0 1px @color-focus;
+			-webkit-box-shadow: 0 0 0 1px @color-focus;
+			box-shadow: 0 0 0 1px @color-focus;
+		}
+
+		&.invalid {
+			-moz-box-shadow: 0 0 0 1px fade(@color-error, 40%);
+			-webkit-box-shadow: 0 0 0 1px fade(@color-error, 40%);
+			box-shadow: 0 0 0 1px fade(@color-error, 40%);
+		}
+
+		&.required {
+			border-right: 4px solid fade(@color-error, 40%);
+		}
+	}
+
+	.half-width {
+		.clearfix();
+
+		input[type=text],
+		input[type=password],
+		input[type=email],
+		input[type=tel],
+		input[type=number],
+		input[type=date],
+		input[type=range],
+		input[type=search],
+		input[type=url],
+		textarea,
+		label,
+		.btn {
+			width: 49%;
+			margin-left: 2%;
+			float: left;
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+
+		.btn, label {
+			width: 49%;
+			padding: 8px 12px;
+			line-height: 19px;
+			margin-bottom: 12px;
+		}
+
+		label {
+			padding-left: 0;
+			line-height: 21px;
+		}
+	}
+
+	textarea {
+		height: 79px;
+	}
+
+	.pwn-select-value {
+		.rounded(0);
+		border: 0;
+		width: 100%;
+		box-sizing: border-box;
+		height: 37px;
+		background-color: #fff;
+		vertical-align: middle;
+		font-family: "proxima-nova", sans-serif;
+		color: #333;
+		padding: 8px 12px;
+		font-size: 17px;
+		line-height: 21px;
+		display: block;
+		margin: 0 0 12px;
+	}
+
+	.pwn-select {
+		.clearfix();
+		display: inline-block;
+		position: relative;
+		margin-bottom: 10px;
+		cursor: pointer;
+		border: 1px solid #e9e9e9;
+
+		.pwn-select-value {
+			display: block;
+			float: left;
+			width: 270px;
+			margin: 0;
+			text-align: left;
+
+			&.not-selected {
+				color: #999;
+			}
+		}
+
+		.pwn-select-list {
+			position: absolute;
+			display: none;
+			top: 38px;
+			left: -1px;
+			background-color: #ffffff;
+			border: 1px solid #e9e9e9;
+			border-top: 0;
+			max-height: 168px;
+			overflow-y: auto;
+			width: 302px;
+			z-index: 1000;
+			text-align: left;
+
+			> div {
+				padding: 8px 12px 8px 31px;
+				border-top: 1px solid #e9e9e9;
+				font-family: lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+				font-size: 17px;
+				color: #333;
+				line-height: 21px;
+
+				&:first-child {
+					border-top: 0;
+				}
+
+				&.selected {
+					background: url(../images/check-selected.jpg) no-repeat 4px -2px;
+
+					&:hover {
+						background-position: 4px -41px;
+					}
+				}
+
+				&:hover {
+					background-color: @brytecore-blue;
+					color: #fff;
+					border-color: @brytecore-blue;
+				}
+			}
+		}
+
+		.pwn-select-arrow {
+			display: block;
+			position: relative;
+			float: left;
+			height: 39px;
+			width: 31px;
+			background: @brytecore-blue url(../images/select-arrow.png) 5px 2px no-repeat;
+			background-size: 20px 140px;
+			margin: -1px -1px -1px 0;
+			.unselectable();
+			cursor: pointer;
+			overflow: hidden;
+
+			img {
+				position: absolute;
+				top: 2px;
+				left: 5px;
+				width: 20px;
+			}
+
+			&.expanded {
+				background-position: 5px -33px;
+			}
+		}
+
+		&:hover {
+			.pwn-select-arrow {
+				background-color: lighten(@brytecore-blue, 5%);
+			}
+		}
+	}
+
+	.btn {
+		background-color: @btn-primary;
+		color: @btn-primary-text;
+		border-color: @btn-primary;
+		margin: 12px 0;
+		display: inline-block;
+		padding: 9px 32px;
+		font-size: 15px;
+
+		&:hover {
+			background-color: fade(@btn-primary, 80%);
+		}
+
+		&.secondary {
+			background-color: #fafafa;
+			color: @text-color;
+			border: 1px solid #ddd;
+		}
+	}
+}
+
 .btn {
 	border: 1px solid @text-color;
 	padding: 12px 14px;
