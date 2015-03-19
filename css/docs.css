@@ -1,6 +1,9 @@
 body {
   padding-top: 39px;
 }
+body.docs-home {
+  padding-top: 0;
+}
 h2 {
   font-weight: 400;
   border-bottom: 1px solid #eaeaea;
