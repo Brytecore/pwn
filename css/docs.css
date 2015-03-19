@@ -1,3 +1,6 @@
+body {
+  padding-top: 39px;
+}
 h2 {
   font-weight: 400;
   border-bottom: 1px solid #eaeaea;
@@ -123,4 +126,7 @@ h2 {
 .syntaxhighlighter code .line.alt1,
 .syntaxhighlighter div .line.alt1 {
   background-color: #f8f8f8 !important;
+}
+.nav-menu {
+  text-transform: uppercase;
 }
