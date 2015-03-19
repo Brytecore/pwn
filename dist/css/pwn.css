@@ -1073,7 +1073,7 @@ ul li {
   text-decoration: underline;
 }
 .nav-menu .menu ul li.brand a {
-  padding: 0;
+  padding: 0 .75em 0 0;
 }
 .nav-menu .menu ul li.brand .logo {
   height: 28px;
