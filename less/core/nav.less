@@ -12,18 +12,45 @@
 				margin: 0;
 				padding: 0;
 
-				a {
+				a, span {
 					display: block;
 					padding: .5em .75em;
 					font-size: .9em;
 					line-height: 1.8em;
+					color: @text-color;
 
 					a:hover {
 						text-decoration: underline;
 					}
 				}
+
+				&.brand {
+					.logo {
+						height: 29px;
+						width: 29px;
+
+						img {
+							display: inline;
+							vertical-align: middle;
+						}
+					}
+				}
+
+				&.active {
+					a {
+						background-color: @color-light-background;
+					}
+				}
 			}
 		}
+	}
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 10;
+		background-color: #fff;
 	}
 
 	&.centered {
@@ -38,7 +65,7 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		z-index: 1000;
+		z-index: 10;
 
 		.menu {
 			float: left;

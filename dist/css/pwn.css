@@ -1060,14 +1060,35 @@ ul li {
   margin: 0;
   padding: 0;
 }
-.nav-menu .menu ul li a {
+.nav-menu .menu ul li a,
+.nav-menu .menu ul li span {
   display: block;
   padding: .5em .75em;
   font-size: .9em;
   line-height: 1.8em;
+  color: #555555;
 }
-.nav-menu .menu ul li a a:hover {
+.nav-menu .menu ul li a a:hover,
+.nav-menu .menu ul li span a:hover {
   text-decoration: underline;
+}
+.nav-menu .menu ul li.brand .logo {
+  height: 29px;
+  width: 29px;
+}
+.nav-menu .menu ul li.brand .logo img {
+  display: inline;
+  vertical-align: middle;
+}
+.nav-menu .menu ul li.active a {
+  background-color: #ededed;
+}
+.nav-menu.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #fff;
 }
 .nav-menu.centered .menu ul {
   text-align: center;
@@ -1077,7 +1098,7 @@ ul li {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 10;
 }
 .nav-menu.mini-nav .menu {
   float: left;
