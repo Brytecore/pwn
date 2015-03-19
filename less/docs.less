@@ -1,73 +1,98 @@
+@color-hero: #efefef;
+@color-hero-h1: #122340;
+@color-hero-h2: #27a9e0;
+
+@color-header: #27a9e0;
+@color-header-h1: #fff;
+@color-header-p: #fff;
+
+@color-divider: #eaeaea;
+@color-footer-text: #bbb;
+@color-footer-a: #72a6b7;
+
 .docs-hero {
-	background: #efefef;
+	background: @color-hero;
 	padding: 60px 0;
+
+	h1 {
+		text-align: center;
+		color: @color-hero-h1;
+		line-height: 1.3em;
+	}
+
+	h2 {
+		text-align: center;
+		color: @color-hero-h2;
+	}
 }
 
-.docs-home h1 {
-	text-align: center;
-	color: #122340;
-	line-height: 1.3em;
-}
+.docs-home {
+	h3 {
+		margin-top: 2em;
+		text-align: center;
+	}
 
-.docs-home h2 {
-	text-align: center;
-	color: #27a9e0;
-}
+	p {
+		text-align: center;
+	}
 
-.docs-home h3 {
-	margin-top: 2em;
-	text-align: center;
-}
+	.nyi {
+		margin-top: 2em;
 
-.docs-home p {
-	text-align: center;
+		&:before {
+			content: "Use at your own risk";
+		}
+	}
+
+	.docs-download {
+		padding: 1.5em 0 1em;
+		text-align: center;
+	}
 }
 
 .docs-footer {
 	font-size: .8em;
+
+	.row:first-child {
+		padding-top: 2em;
+		margin-top: 2em;
+		border-top: 1px solid @color-divider;
+	}
+
+	p {
+		color: @color-footer-text;
+	}
+
+	.row:nth-child(2) {
+		padding: 2em 0 3em;
+	}
+
+	a {
+		color: @color-footer-a;
+	}
+
+	.docs-footer-logo img {
+		vertical-align: middle;
+		height: 32px;
+		width: 32px;
+	}
 }
 
-.docs-footer .row:first-child {
-	padding-top: 2em;
-	margin-top: 2em;
-	border-top: 1px solid #eaeaea;
-}
-
-.docs-footer p {
-	color: #bbb;
-}
-
-.docs-footer .row:nth-child(2) {
-	padding: 2em 0 3em;
-}
-
-.docs-footer a {
-	color: #72a6b7;
-}
-
-.nav-menu .menu ul li.docs-footer-logo {
-	padding: 0 1.5em;
-}
-
-.docs-footer-logo img {
-	vertical-align: middle;
-	height: 32px;
-	width: 32px;
-}
-
-.docs-home .nyi {
-	margin-top: 2em;
-}
-
-.docs-home .nyi:before {
-	content: "Use at your own risk";
-}
-
-.docs-download {
-	padding: 1.5em 0 1em;
-	text-align: center;
+.nav-menu {
+	.menu ul li.docs-footer-logo {
+		padding: 0 1.5em;
+	}
 }
 
 .docs-header {
+	background-color: @color-header;
 
+	h1 {
+		color: @color-header-h1;
+	}
+
+	p {
+		color: @color-header-p;
+		font-size: 1.4em;
+	}
 }

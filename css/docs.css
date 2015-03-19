@@ -2,12 +2,12 @@
   background: #efefef;
   padding: 60px 0;
 }
-.docs-home h1 {
+.docs-hero h1 {
   text-align: center;
   color: #122340;
   line-height: 1.3em;
 }
-.docs-home h2 {
+.docs-hero h2 {
   text-align: center;
   color: #27a9e0;
 }
@@ -16,6 +16,16 @@
   text-align: center;
 }
 .docs-home p {
+  text-align: center;
+}
+.docs-home .nyi {
+  margin-top: 2em;
+}
+.docs-home .nyi:before {
+  content: "Use at your own risk";
+}
+.docs-home .docs-download {
+  padding: 1.5em 0 1em;
   text-align: center;
 }
 .docs-footer {
@@ -27,7 +37,7 @@
   border-top: 1px solid #eaeaea;
 }
 .docs-footer p {
-  color: #bbb;
+  color: #bbbbbb;
 }
 .docs-footer .row:nth-child(2) {
   padding: 2em 0 3em;
@@ -35,21 +45,21 @@
 .docs-footer a {
   color: #72a6b7;
 }
-.nav-menu .menu ul li.docs-footer-logo {
-  padding: 0 1.5em;
-}
-.docs-footer-logo img {
+.docs-footer .docs-footer-logo img {
   vertical-align: middle;
   height: 32px;
   width: 32px;
 }
-.docs-home .nyi {
-  margin-top: 2em;
+.nav-menu .menu ul li.docs-footer-logo {
+  padding: 0 1.5em;
 }
-.docs-home .nyi:before {
-  content: "Use at your own risk";
+.docs-header {
+  background-color: #27a9e0;
 }
-.docs-download {
-  padding: 1.5em 0 1em;
-  text-align: center;
+.docs-header h1 {
+  color: #ffffff;
+}
+.docs-header p {
+  color: #ffffff;
+  font-size: 1.4em;
 }
