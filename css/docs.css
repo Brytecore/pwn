@@ -35,8 +35,23 @@ h2 {
   padding: 1.5em 0 1em;
   text-align: center;
 }
+.nav-menu .menu ul li.docs-footer-logo {
+  padding: 0 1.5em;
+}
+.docs-header {
+  background-color: #27a9e0;
+}
+.docs-header h1 {
+  color: #ffffff;
+  font-weight: 400;
+}
+.docs-header p {
+  color: #ffffff;
+  font-size: 1.4em;
+}
 .docs-footer {
   font-size: .8em;
+  text-align: center;
 }
 .docs-footer .row:first-child {
   padding-top: 2em;
@@ -56,20 +71,6 @@ h2 {
   vertical-align: middle;
   height: 32px;
   width: 32px;
-}
-.nav-menu .menu ul li.docs-footer-logo {
-  padding: 0 1.5em;
-}
-.docs-header {
-  background-color: #27a9e0;
-}
-.docs-header h1 {
-  color: #ffffff;
-  font-weight: 400;
-}
-.docs-header p {
-  color: #ffffff;
-  font-size: 1.4em;
 }
 .example {
   padding: 2.5em 1.25em 1.25em;
