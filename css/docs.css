@@ -117,5 +117,9 @@ h2 {
 }
 .syntaxhighlighter code,
 .syntaxhighlighter div {
-  line-height: 1.5em !important;
+  line-height: 1.8em !important;
+}
+.syntaxhighlighter code .line.alt1,
+.syntaxhighlighter div .line.alt1 {
+  background-color: #f8f8f8 !important;
 }
