@@ -210,34 +210,24 @@
 	font-size: 14px;
 	display: inline-block;
 
-	border: 1px solid @btn-primary;
 	background-color: @btn-primary;
 	color: @btn-primary-text;
+	border: 1px solid @btn-primary-border;
 
 	&:hover {
 		text-decoration: none;
-		background-color: fade(@btn-primary, 90%);
-	}
-}
-
-.btn.light {
-	background-color: fade(@btn-primary, 20%);
-	color: @text-color;
-
-	&:hover {
-		background-color: fade(@btn-primary, 15%);
-		cursor: pointer;
+		background-color: @btn-primary-hover;
 	}
 }
 
 .btn.secondary {
-	background-color: #fff;
-	color: @text-color;
-	border-color: @text-color;
+	background-color: @btn-secondary;
+	color: @btn-secondary-text;
+	border-color: @btn-secondary-border;
 
 	&:hover {
 		text-decoration: none;
-		background-color: @color-light-background;
+		background-color: @btn-secondary-hover;
 	}
 }
 

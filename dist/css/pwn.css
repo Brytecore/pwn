@@ -1385,30 +1385,22 @@ ul li {
   text-transform: uppercase;
   font-size: 14px;
   display: inline-block;
-  border: 1px solid #26a9e0;
   background-color: #26a9e0;
   color: #ffffff;
+  border: 1px solid #26a9e0;
 }
 .btn:hover {
   text-decoration: none;
-  background-color: rgba(38, 169, 224, 0.9);
-}
-.btn.light {
-  background-color: rgba(38, 169, 224, 0.2);
-  color: #555555;
-}
-.btn.light:hover {
-  background-color: rgba(38, 169, 224, 0.15);
-  cursor: pointer;
+  background-color: #ffffff;
 }
 .btn.secondary {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #555555;
-  border-color: #555555;
+  border-color: #bfd5e0;
 }
 .btn.secondary:hover {
   text-decoration: none;
-  background-color: #ededed;
+  background-color: #f4f4f4;
 }
 .btn.small {
   padding: 6px 10px;
