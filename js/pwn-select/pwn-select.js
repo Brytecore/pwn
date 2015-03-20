@@ -73,17 +73,9 @@
 
 			// Hide ddl on mouse click outside list
 			$( document ).on( "mouseup", function ( e ) {
-				var elem, evt = e ? e : event;
-				if ( evt.srcElement )  elem = evt.srcElement;
-				else if ( evt.target ) elem = evt.target;
-				if ( ! cont.is( elem.target )
-					&& 0 === cont.has( elem.target ).length ) {
-					//IE11 BUG workaround
-					var str = elem.tagName;
-					if ( str.toUpperCase().indexOf( 'HTML' ) == - 1 ) {
-						ddl.hide();
-						arrow_cont.removeClass( 'expanded' );
-					}
+				if ( ! cont.is( e.target ) && 0 === cont.has( e.target ).length ) {
+					ddl.hide();
+					arrow_cont.removeClass( 'expanded' );
 				}
 			} );
 
