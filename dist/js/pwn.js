@@ -1,4 +1,45 @@
-/*! Pwn INPUT TYPE=SELECT replacement. */
+/*! Pwn INPUT TYPE=CHECKBOX replacement. */
+
+( function ( $, undefined ) {
+
+	$.fn.pwn_checkbox = function () {
+
+		return this.each( function () {
+			var t = $( this );
+
+			if ( 'input' !== t[0].tagName.toLowerCase() ||
+				'checkbox' !== t.attr('type') ) {
+				return;
+			}
+
+			var cb = $( "<div class='pwn-checkbox'></div>" );
+
+			if ( t.prop( "checked" ) ) {
+				cb.addClass( "checked" );
+			}
+
+			var label = t.parent( 'label.checkbox' );
+
+			t.before( cb );
+			t.hide();
+
+			if ( 0 < label.length ) {
+				label.on( "click touchstart", function ( e ) {
+					e.preventDefault();
+					cb.toggleClass( 'checked' );
+					t.prop( "checked", ! t.prop( "checked" ) ).change();
+				});
+			} else {
+				cb.on( 'click touchstart', function ( e ) {
+					cb.toggleClass( 'checked' );
+					t.prop( "checked", ! t.prop( "checked" ) ).change();
+				});
+			}
+		});
+	};
+}( jQuery ) );
+
+/*! Pwn SELECT replacement. */
 
 ( function ( $, undefined ) {
 
@@ -16,7 +57,6 @@
 			var field = $( "<div class='pwn-select-value'></div>" );
 			var ddl = $( "<div class='pwn-select-list'></div>" );
 			var arrow_cont = $( "<div class='pwn-select-arrow'></div>" );
-			//var arrow = $( "<img src='../images/select-arrow.png'>" );
 
 			var current_value, current_text, current_option;
 
@@ -49,7 +89,6 @@
 			// Set the initial value to the selected option value
 			field.text( current_text );
 
-			//arrow_cont.append( arrow );
 			cont.append( field );
 			cont.append( ddl );
 			cont.append( arrow_cont );
