@@ -10,3 +10,6 @@ desktop.ini
 
 # Node
 node_modules
+
+# Jekyll
+_site
