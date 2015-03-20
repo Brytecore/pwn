@@ -1378,42 +1378,39 @@ ul li {
   background-color: #3cb2e3;
 }
 .form .btn {
-  background-color: #26a9e0;
-  color: #ffffff;
-  border-color: #26a9e0;
   margin: 12px 0;
-  display: inline-block;
-  padding: 9px 32px;
-  font-size: 15px;
-}
-.form .btn:hover {
-  background-color: rgba(38, 169, 224, 0.8);
-}
-.form .btn.secondary {
-  background-color: #fafafa;
-  color: #555555;
-  border: 1px solid #ddd;
 }
 .btn {
-  border: 1px solid #555555;
   padding: 12px 14px;
   text-transform: uppercase;
   font-size: 14px;
-  color: #555555;
+  display: inline-block;
+  border: 1px solid #26a9e0;
+  background-color: #26a9e0;
+  color: #ffffff;
 }
 .btn:hover {
   text-decoration: none;
+  background-color: rgba(38, 169, 224, 0.9);
 }
-.btn-light {
-  border: 1px solid #fff;
-  color: #fff;
-  display: inline-block;
+.btn.light {
+  background-color: rgba(38, 169, 224, 0.2);
+  color: #555555;
 }
-.btn-light:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+.btn.light:hover {
+  background-color: rgba(38, 169, 224, 0.15);
   cursor: pointer;
 }
-.btn-small {
+.btn.secondary {
+  background-color: #fff;
+  color: #555555;
+  border-color: #555555;
+}
+.btn.secondary:hover {
+  text-decoration: none;
+  background-color: #ededed;
+}
+.btn.small {
   padding: 6px 10px;
   font-size: 11px;
 }
