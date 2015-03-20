@@ -1391,7 +1391,7 @@ ul li {
 }
 .btn:hover {
   text-decoration: none;
-  background-color: #7fcced;
+  background-color: rgba(38, 169, 224, 0.8);
 }
 .btn.secondary {
   background-color: #ffffff;
