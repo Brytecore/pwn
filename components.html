@@ -61,7 +61,7 @@
 					Replace the default html checkbox with a styled version that matches the Pwn theme.
 				</p>
 				<div class="example form">
-					<label for="checkbox-demo" class="checkbox"><input type="checkbox" id="checkbox-demo"> Yes, I'd like to see this demo!</label>
+					<label for="checkbox-demo" class="checkbox"><input type="checkbox" class="pwn-checkbox" id="checkbox-demo"> Yes, I'd like to see this demo!</label>
 					<div class="syntax">
 <pre class="brush: javascript;html-script: true">
 &lt;!-- Don't forget the checkbox class on your label element. --&gt;
@@ -86,7 +86,25 @@
 		<div class="row">
 			<div class="pwn-xs-12">
 				<h2>Radio Buttons</h2>
-				<div class="nyi">Radios coming soon.</div>
+				<p>
+					Replace the default html radio buttons with a styled version that matches the Pwn theme.
+				</p>
+				<div class="example form">
+					<label class="radio"><input type="radio" name="radio-demo" class="pwn-radio"> You can go with this</label>
+					<label class="radio"><input type="radio" name="radio-demo" class="pwn-radio"> Or you can go with that</label>
+					<div class="syntax">
+<pre class="brush: javascript;html-script: true">
+&lt;!-- Don't forget the RADIO class on your label elements. --&gt;
+&lt;label class="radio"&gt;&lt;input type="radio" name="radio-demo"> You can go with this&lt;/label&gt;
+&lt;label class="radio"&gt;&lt;input type="radio" name="radio-demo"> Or you can go with that&lt;/label&gt;
+
+&lt;script type="text/javascript"&gt;
+	// Don't forget to wrap your code in the jQuery .ready() function (not shown).
+	$( "label.radio input" ).pwn_radio();
+&lt;/script&gt;
+</pre>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -152,6 +170,7 @@
 		(function ( $, undefined ) {
 			function run_demos() {
 				$( "#checkbox-demo" ).pwn_checkbox();
+				$( 'label.radio input' ).pwn_radio();
 				$( "#select-demo" ).pwn_select();
 			}
 
