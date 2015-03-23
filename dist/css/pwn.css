@@ -1645,6 +1645,29 @@ label.checkbox .pwn-checkbox {
 .pwn-checkbox.checked {
   background-color: #26a9e0;
 }
+label.radio {
+  line-height: 20px;
+  cursor: pointer;
+}
+label.radio input[type=radio],
+label.radio .pwn-radio {
+  float: left;
+  line-height: 20px;
+}
+.pwn-radio {
+  height: 20px;
+  width: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #969b9d;
+  background-color: #fff;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.pwn-radio.checked {
+  background-color: #26a9e0;
+}
 .pwn-select-value {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
