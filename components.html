@@ -5,9 +5,9 @@
 <head lang="en">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--prod-->
+	<!--prod
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/Brytecore/pwn/master/dist/css/pwn.min.css">
-	<!--dev
+	<!--dev-->
 	<link rel="stylesheet" type="text/css" href="../pwn/dist/css/pwn.min.css">
 	-->
 	<link rel="stylesheet" type="text/css" href="css/docs-libs.min.css">
@@ -34,18 +34,27 @@
 			<div class="pwn-xs-12">
 				<h2>Installing components on your website</h2>
 				<p>
-					The Pwn Javascript library requires jQuery. To put jQuery on your site, add this <code>&lt;link&gt;</code>
+					The Pwn Javascript library requires jQuery. To put jQuery on your site, add this <code>&lt;script&gt;</code>
 					to your page, before the Pwn javascript link.
 				</p>
 <pre class="brush: html;gutter: false;">
 &lt;script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"&gt;&lt;/script&gt;
 </pre>
 				<p>
-					Copy pwn.min.js into your website and add a <code>&lt;link&gt;</code> tag at the end of your page, just
+					Copy pwn.min.js into your website and add a <code>&lt;script&gt;</code> tag at the end of your page, just
 					before your <code>&lt;/body&gt;</code> tag:
 				</p>
 <pre class="brush: html;gutter: false;">
 &lt;script type="text/javascript" src="/path-on-your-server/pwn.min.js"&gt;&lt;/script&gt;
+</pre>
+				<h3>Required Styles</h3>
+				<p>
+					The Pwn Javascript library requires some basic styles in order to function correctly. You can
+					simply include the Pwn stylesheets like a normal installation. Add this <code>&lt;link&gt;</code>
+					element to your page's <code>&lt;head&gt;</code> section:
+				</p>
+<pre class="brush: html;gutter: false;">
+&lt;link rel="stylesheet" type="text/css" href="/path-on-your-server/pwn.min.css"&gt;
 </pre>
 			</div>
 		</div>
@@ -61,17 +70,17 @@
 					Replace the default html checkbox with a styled version that matches the Pwn theme.
 				</p>
 				<div class="example form">
-					<label for="checkbox-demo" class="checkbox"><input type="checkbox" class="pwn-checkbox" id="checkbox-demo"> Yes, I'd like to see this demo!</label>
+					<label for="checkbox-demo" class="checkbox"><input type="checkbox" id="checkbox-demo"> Yes, I'd like to see this demo!</label>
 					<div class="syntax">
 <pre class="brush: javascript;html-script: true">
-&lt;!-- Don't forget the checkbox class on your label element. --&gt;
+&lt;!-- Don't forget the 'checkbox' class on your label element (required). --&gt;
 &lt;label for="checkbox-demo" class="checkbox"&gt;
 	&lt;input type="checkbox" id="checkbox-demo"&gt; Yes, I'd like to see this demo!
 &lt;/label&gt;
 
 &lt;script type="text/javascript"&gt;
 	// Don't forget to wrap your code in the jQuery .ready() function (not shown).
-	$( "#checkbox-demo" ).pwn_checkbox();
+	$( "label.checkbox input" ).pwn_checkbox();
 &lt;/script&gt;
 </pre>
 					</div>
@@ -90,13 +99,13 @@
 					Replace the default html radio buttons with a styled version that matches the Pwn theme.
 				</p>
 				<div class="example form">
-					<label class="radio"><input type="radio" name="radio-demo" class="pwn-radio" value="this"> You can go with this</label>
-					<label class="radio"><input type="radio" name="radio-demo" class="pwn-radio" value="that"> Or you can go with that</label>
+					<label class="radio"><input type="radio" name="radio-demo" value="this"> You can go with this</label>
+					<label class="radio"><input type="radio" name="radio-demo" value="that"> Or you can go with that</label>
 					<div class="syntax">
 <pre class="brush: javascript;html-script: true">
-&lt;!-- Don't forget the RADIO class on your label elements. --&gt;
-&lt;label class="radio"&gt;&lt;input type="radio" name="radio-demo"> You can go with this&lt;/label&gt;
-&lt;label class="radio"&gt;&lt;input type="radio" name="radio-demo"> Or you can go with that&lt;/label&gt;
+&lt;!-- Don't forget the 'radio' class on your label elements (required). --&gt;
+&lt;label class="radio"&gt;&lt;input type="radio" name="radio-demo" value="this"> You can go with this&lt;/label&gt;
+&lt;label class="radio"&gt;&lt;input type="radio" name="radio-demo" value="that"> Or you can go with that&lt;/label&gt;
 
 &lt;script type="text/javascript"&gt;
 	// Don't forget to wrap your code in the jQuery .ready() function (not shown).
@@ -156,11 +165,11 @@
 	{% include footer.html %}
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<!--prod-->
+	<!--prod
 	<script type="text/javascript" src="https://rawgit.com/Brytecore/pwn/master/dist/js/pwn.min.js"></script>
-	<!--dev
+	<!--dev-->
 	<script type="text/javascript" src="../pwn/dist/js/pwn.js"></script>
-	-->
+	<!---->
 	<script type="text/javascript" src="js/docs-libs.min.js"></script>
 	<script type="text/javascript" src="js/pwn-docs.min.js"></script>
 	<script type="text/javascript">
