@@ -26,15 +26,21 @@
 			if ( 0 < label.length ) {
 				label.on( "click touchstart", function ( e ) {
 					e.preventDefault();
-					cb.toggleClass( 'checked' );
 					t.prop( "checked", ! t.prop( "checked" ) ).change();
 				});
 			} else {
 				cb.on( 'click touchstart', function ( e ) {
-					cb.toggleClass( 'checked' );
 					t.prop( "checked", ! t.prop( "checked" ) ).change();
 				});
 			}
+
+			t.on( "change", function() {
+				if ( t.prop( "checked" ) ) {
+					cb.addClass( "checked" );
+				} else {
+					cb.removeClass( "checked" );
+				}
+			});
 		});
 	};
 }( jQuery ) );

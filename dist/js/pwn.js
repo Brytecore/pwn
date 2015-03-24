@@ -26,15 +26,21 @@
 			if ( 0 < label.length ) {
 				label.on( "click touchstart", function ( e ) {
 					e.preventDefault();
-					cb.toggleClass( 'checked' );
 					t.prop( "checked", ! t.prop( "checked" ) ).change();
 				});
 			} else {
 				cb.on( 'click touchstart', function ( e ) {
-					cb.toggleClass( 'checked' );
 					t.prop( "checked", ! t.prop( "checked" ) ).change();
 				});
 			}
+
+			t.on( "change", function() {
+				if ( t.prop( "checked" ) ) {
+					cb.addClass( "checked" );
+				} else {
+					cb.removeClass( "checked" );
+				}
+			});
 		});
 	};
 }( jQuery ) );
@@ -47,6 +53,7 @@
 
 		return this.each( function () {
 			var t = $( this );
+			var name = t.attr( "name" );
 
 			if ( 'input' !== t[0].tagName.toLowerCase() ||
 				'radio' !== t.attr('type') ) {
@@ -54,6 +61,7 @@
 			}
 
 			var rd = $( "<div class='pwn-radio'></div>" );
+			rd.attr( "name", name );
 
 			if ( t.prop( "checked" ) ) {
 				rd.addClass( "checked" );
@@ -67,15 +75,23 @@
 			if ( 0 < label.length ) {
 				label.on( "click touchstart", function ( e ) {
 					e.preventDefault();
-					rd.toggleClass( 'checked' );
 					t.prop( "checked", ! t.prop( "checked" ) ).change();
 				});
 			} else {
 				rd.on( 'click touchstart', function ( e ) {
-					rd.toggleClass( 'checked' );
 					t.prop( "checked", ! t.prop( "checked" ) ).change();
 				});
 			}
+
+			t.on( "change", function() {
+				$( ".pwn-radio[name=" + name + "]" ).removeClass( "checked" );
+
+				if ( t.prop( "checked" ) ) {
+					rd.addClass( "checked" );
+				} else {
+					rd.removeClass( "checked" );
+				}
+			});
 		});
 	};
 }( jQuery ) );

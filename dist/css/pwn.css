@@ -1648,6 +1648,7 @@ label.checkbox .pwn-checkbox {
 label.radio {
   line-height: 20px;
   cursor: pointer;
+  margin: 6px 0;
 }
 label.radio input[type=radio],
 label.radio .pwn-radio {
