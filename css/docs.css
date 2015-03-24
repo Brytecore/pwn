@@ -97,21 +97,34 @@ h2 {
   font-weight: 700;
 }
 .example .syntax {
-  border-top: 1px solid #eaeaea;
-  background-color: #fff;
-  padding: 1.6em 0 0;
+  border-width: 1px 0 0;
   margin: 1.25em -1.25em -1.25em;
+  padding: 1.6em 0 0;
+}
+.example .syntax:before {
+  left: 20px;
+}
+.example .syntax .syntaxhighlighter.nogutter td.code .line {
+  padding-left: 0 !important;
+}
+.example .syntax .syntaxhighlighter.nogutter {
+  margin-bottom: 1em !important;
+}
+.syntax {
+  border: 1px solid #eaeaea;
+  background-color: #fff;
+  padding: 1.2em 0 0;
   position: relative;
 }
-.example .syntax:before,
-.example .syntax:after {
+.syntax:before,
+.syntax:after {
   content: " ";
   display: table;
 }
-.example .syntax:after {
+.syntax:after {
   clear: both;
 }
-.example .syntax:before {
+.syntax:before {
   content: "Syntax";
   text-transform: uppercase;
   font-size: .8em;
@@ -119,8 +132,14 @@ h2 {
   padding: 0 0 10px;
   position: absolute;
   top: 4px;
-  left: 20px;
+  left: 12px;
   font-weight: 700;
+}
+.syntax .syntaxhighlighter.nogutter td.code .line {
+  padding-left: 12px !important;
+}
+.syntax .syntaxhighlighter.nogutter {
+  margin-bottom: 0 !important;
 }
 .syntaxhighlighter code,
 .syntaxhighlighter div {
@@ -129,6 +148,16 @@ h2 {
 .syntaxhighlighter code .line.alt1,
 .syntaxhighlighter div .line.alt1 {
   background-color: #f8f8f8 !important;
+}
+.grid-demo .row {
+  margin-bottom: 12px;
+}
+.grid-demo .grid-name {
+  background-color: rgba(39, 169, 224, 0.05);
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 400;
+  font-size: .8em;
 }
 .nav-menu {
   text-transform: uppercase;

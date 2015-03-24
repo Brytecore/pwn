@@ -1,3 +1,2 @@
-function hello() {
-	alert('hello');
-}
+SyntaxHighlighter.defaults['toolbar'] = false;
+SyntaxHighlighter.all();

@@ -24,6 +24,277 @@
 			</div>
 		</div>
 	</div>
+	<div class="container">
+		<div class="row">
+			<div class="pwn-xs-12">
+				<h2>
+					Overview
+				</h2>
+				<p>
+					Every responsive stylesheet framework is only as good as its grid system. The Pwn grid
+					was designed to give you direct control over the user interface on all screen sizes and
+					devices.
+				</p>
+				<p>
+					The core element of the grid is the container, identified as a div with the class
+					<code>container</code>. It controls the width of the content, and resizes dynamically at certain
+					screen sizes, often referred to as breakpoints.
+				</p>
+				<div class="syntax">
+<pre class="brush: html;gutter: false;">
+&lt;div class="container"&gt;
+</pre>
+				</div>
+				<p>
+					Inside of the container is one or more rows, identified as a div with the class <code>row</code>.
+					Rows ensure the contents fit properly inside of containers.
+				</p>
+				<div class="syntax">
+<pre class="brush: html;gutter: false;">
+&lt;div class="container"&gt;
+	&lt;div class="row"&gt;
+</pre>
+				</div>
+				<p>
+					Rows consist of 1 to 12 columns. These columns stretch vertically to fit content, but will not
+					break the boundaries of the row. This ensures your columns always start at the same horizontal
+					location on the screen, no matter the content from the previous row.
+				</p>
+				<div class="syntax">
+<pre class="brush: html;gutter: false;">
+&lt;div class="container"&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="pwn-xs-12"&gt;
+</pre>
+				</div>
+				<p>
+					You can specify each column's behavior based on the screen size. For example, you may want a
+					33.3% width column to be 100% on an iPhone and 50% on an iPad. These behaviors are determined
+					by the style applies to each column, in the format
+					<code>pwn-[minimum_screen_size]-[column_count]</code>.
+				</p>
+				<div class="syntax">
+<pre class="brush: html;gutter: false;">
+&lt;div class="container"&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="pwn-xs-12 pwn-md-6 pwn-lg-4"&gt;
+</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="pwn-xs-12">
+				<h2>Supported Screen Sizes</h2>
+				<p>
+					There are five breakpoints that allow you to tailor your content to specific screen
+					sizes. Each of these breakpoints were designed with specific devices in mind, to ensure
+					your users' most common use cases are covered.
+				</p>
+				<h3>Pixel to Point Ratios</h3>
+				<p>
+					Older phones use a 1-to-1 pixel-to-point ratio, meaning 1 pixel on the screen
+					equals one pixel in your website design. High DPI screens convert points to some ratio of pixels.
+					For example, iPhone 4 and higher (excluding iPhone 6 Plus) use a 2:1 ratio of pixels-to-points. Thus,
+					an iPhone 4 has a 320 point width screen, but it uses 640 pixels to render those points, giving the
+					user a sharper user interface and overall better experience. Other phones, such as the iPhone 6 Plus,
+					use higher ratios. The Samsung Galaxy S6 uses a 3:1 ratio, rendering 480 points in 1,440 pixels.
+				</p>
+				<p>
+					The Pwn framework eliminates your need to understand this. Simply use our built-in classes to target
+					certain resolutions, and your website will look great on any device.
+				</p>
+				<h3>Extra Small</h3>
+				<p>
+					Extra small screens can be targeted with the <code>pwn-xs-[column_size]</code> class. These screens
+					are 320 points and below in width. This includes the iPhone 5S and lower.
+				</p>
+				<h3>Small</h3>
+				<p>
+					Small screens can be targeted with the <code>pwn-sm-[column_size]</code> class. These screens
+					are from 321 to 540 points in width. This includes most modern smartphones.
+				</p>
+				<h3>Medium</h3>
+				<p>
+					Medium screens can be targeted with the <code>pwn-md-[column_size]</code> class. These screens
+					are from 541 to 768 points in width. This includes some large smartphones (also
+					known as phablets), most modern smartphones in landscape orientation, and most tablets in portrait
+					orientation.
+				</p>
+				<h3>Large</h3>
+				<p>
+					Large screens can be targeted with the <code>pwn-lg-[column_size]</code> class. These screens
+					are from 769 to 1280 points in width. This includes most tablets in landscape
+					orientation and some smaller desktop screens.
+				</p>
+				<h3>Extra Large</h3>
+				<p>
+					Extra large screens can be targeted with the <code>pwn-xl-[column_size]</code> class. These screens
+					are above 1280 points in width. This includes the most modern laptops and larger desktop
+					monitors.
+				</p>
+				&lt;INSERT DIAGRAM HERE&gt;
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="pwn-xs-12">
+				<h2>Grid Columns</h2>
+
+			</div>
+		</div>
+	</div>
+	<div class="container grid-demo">
+		<div class="row">
+			<div class="pwn-xs-1">
+				<div class="grid-name">pwn-xs-1</div>
+			</div>
+			<div class="pwn-xs-1">
+				<div class="grid-name">pwn-xs-1</div>
+			</div>
+			<div class="pwn-xs-1">
+				<div class="grid-name">pwn-xs-1</div>
+			</div>
+			<div class="pwn-xs-1">
+				<div class="grid-name">pwn-xs-1</div>
+			</div>
+			<div class="pwn-xs-1">
+				<div class="grid-name">pwn-xs-1</div>
+			</div>
+			<div class="pwn-xs-1">
+				<div class="grid-name">pwn-xs-1</div>
+			</div>
+			<div class="pwn-xs-1">
+				<div class="grid-name">pwn-xs-1</div>
+			</div>
+			<div class="pwn-xs-1">
+				<div class="grid-name">pwn-xs-1</div>
+			</div>
+			<div class="pwn-xs-1">
+				<div class="grid-name">pwn-xs-1</div>
+			</div>
+			<div class="pwn-xs-1">
+				<div class="grid-name">pwn-xs-1</div>
+			</div>
+			<div class="pwn-xs-1">
+				<div class="grid-name">pwn-xs-1</div>
+			</div>
+			<div class="pwn-xs-1">
+				<div class="grid-name">pwn-xs-1</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="pwn-xs-2">
+				<div class="grid-name">pwn-xs-2</div>
+			</div>
+			<div class="pwn-xs-2">
+				<div class="grid-name">pwn-xs-2</div>
+			</div>
+			<div class="pwn-xs-2">
+				<div class="grid-name">pwn-xs-2</div>
+			</div>
+			<div class="pwn-xs-2">
+				<div class="grid-name">pwn-xs-2</div>
+			</div>
+			<div class="pwn-xs-2">
+				<div class="grid-name">pwn-xs-2</div>
+			</div>
+			<div class="pwn-xs-2">
+				<div class="grid-name">pwn-xs-2</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="pwn-xs-3">
+				<div class="grid-name">pwn-xs-3</div>
+			</div>
+			<div class="pwn-xs-3">
+				<div class="grid-name">pwn-xs-3</div>
+			</div>
+			<div class="pwn-xs-3">
+				<div class="grid-name">pwn-xs-3</div>
+			</div>
+			<div class="pwn-xs-3">
+				<div class="grid-name">pwn-xs-3</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="pwn-xs-4">
+				<div class="grid-name">pwn-xs-4</div>
+			</div>
+			<div class="pwn-xs-4">
+				<div class="grid-name">pwn-xs-4</div>
+			</div>
+			<div class="pwn-xs-4">
+				<div class="grid-name">pwn-xs-4</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="pwn-xs-5">
+				<div class="grid-name">pwn-xs-5</div>
+			</div>
+			<div class="pwn-xs-5">
+				<div class="grid-name">pwn-xs-5</div>
+			</div>
+			<div class="pwn-xs-2">
+				<div class="grid-name">pwn-xs-2</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="pwn-xs-6">
+				<div class="grid-name">pwn-xs-6</div>
+			</div>
+			<div class="pwn-xs-6">
+				<div class="grid-name">pwn-xs-6</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="pwn-xs-7">
+				<div class="grid-name">pwn-xs-7</div>
+			</div>
+			<div class="pwn-xs-5">
+				<div class="grid-name">pwn-xs-5</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="pwn-xs-8">
+				<div class="grid-name">pwn-xs-8</div>
+			</div>
+			<div class="pwn-xs-4">
+				<div class="grid-name">pwn-xs-4</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="pwn-xs-9">
+				<div class="grid-name">pwn-xs-9</div>
+			</div>
+			<div class="pwn-xs-3">
+				<div class="grid-name">pwn-xs-3</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="pwn-xs-10">
+				<div class="grid-name">pwn-xs-10</div>
+			</div>
+			<div class="pwn-xs-2">
+				<div class="grid-name">pwn-xs-2</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="pwn-xs-11">
+				<div class="grid-name">pwn-xs-11</div>
+			</div>
+			<div class="pwn-xs-1">
+				<div class="grid-name">pwn-xs-1</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="pwn-xs-12">
+				<div class="grid-name">pwn-xs-12</div>
+			</div>
+		</div>
+	</div>
 
 	{% include footer.html %}
 
