@@ -22,8 +22,13 @@ h1, h2, h3, h4, h5, h6 {
 	color: @headings-text-color;
 }
 
+h1, h2 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
 h1 {
-	font-size: 2.5em;
+	font-size: 2.8em;
 	line-height: 1.3em;
 }
 
@@ -32,10 +37,23 @@ h2 {
 	line-height: 1.4em;
 }
 
+h3, h4, h5 {
+	font-weight: @font-weight;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 h3 {
-	font-family: @font-weight;
 	font-size: 1.7em;
 	line-height: 1.5em;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+h5 {
+	font-size: 1.3em;
 }
 
 img {
@@ -43,8 +61,11 @@ img {
 }
 
 p {
-	margin: 2em 0 1.2em;
+	margin: .2em 0 1.8em;
 	line-height: @line-height;
+	&:last-child {
+		margin-bottom: .2em;
+	}
 }
 
 a {

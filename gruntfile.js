@@ -24,6 +24,9 @@ module.exports = function( grunt ) {
 				dest: "dist/css/pwn.css"
 			}
 		}, cssmin: {
+			options: {
+				restructuring: false
+			},
 			pwn_css: {
 				src: "dist/css/pwn.css",
 				dest: "dist/css/pwn.min.css"

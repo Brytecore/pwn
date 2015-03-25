@@ -1019,28 +1019,48 @@ h4,
 h5,
 h6 {
   font-family: "lato", sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   color: #555555;
 }
+h1,
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 h1 {
-  font-size: 2.5em;
+  font-size: 2.8em;
   line-height: 1.3em;
 }
 h2 {
   font-size: 2em;
   line-height: 1.4em;
 }
+h3,
+h4,
+h5 {
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 h3 {
-  font-family: 400;
   font-size: 1.7em;
   line-height: 1.5em;
+}
+h4 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1.3em;
 }
 img {
   max-width: 100%;
 }
 p {
-  margin: 2em 0 1.2em;
+  margin: .2em 0 1.8em;
   line-height: 1.6em;
+}
+p:last-child {
+  margin-bottom: .2em;
 }
 a {
   text-decoration: none;
@@ -1303,6 +1323,9 @@ table {
   border-spacing: 0;
   border-collapse: collapse;
 }
+table.zebra tr:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
 th {
   font-weight: 400;
   text-align: left;
@@ -1314,9 +1337,6 @@ td {
 th.center,
 td.center {
   text-align: center;
-}
-tr:nth-child(2n) {
-  background-color: rgba(0, 0, 0, 0.05);
 }
 code {
   font-family: "Panic Sans", "Bitstream Vera Sans Mono", Monaco, Consolas, "Andale Mono", monospace;

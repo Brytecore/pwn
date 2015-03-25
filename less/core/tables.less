@@ -5,6 +5,13 @@ table {
 	width: 100%;
 	border-spacing: 0;
 	border-collapse: collapse;
+
+	&.zebra {
+		tr:nth-child(2n) {
+			background-color: fade(#000, 5%);
+		}
+
+	}
 }
 
 th {
@@ -18,8 +25,4 @@ th, td {
 	&.center {
 		text-align: center;
 	}
-}
-
-tr:nth-child(2n) {
-	background-color: fade( #000, 5% );
 }
