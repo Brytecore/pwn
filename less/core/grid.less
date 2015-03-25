@@ -1,45 +1,55 @@
+/**
+ * Grid system for the Pwn framework.
+ */
 
-// Default styles ( 1024px width assumed )
+@xs-padding: 10px;
+@md-padding: 15px;
+@lg-padding: 20px;
+
+@xs-container: 100%;
+@sm-container: 538px;
+@md-container: 728px;
+@lg-container: 984px;
+@xl-container: 1240px;
+
+@xs-min-screen-width: 200px;
+@sm-min-screen-width: 568px;
+@md-min-screen-width: 768px;
+@lg-min-screen-width: 1024px;
+@xl-min-screen-width: 1280px;
 
 body {
 
 }
 
 .container {
-	width: 984px;
+	width: @xs-container;
 	margin: 0 auto;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: @xs-padding;
+	padding-right: @xs-padding;
 	.clearfix();
 
 	.row {
+		margin-left: -@xs-padding;
+		margin-right: -@xs-padding;
 		.clearfix();
-		margin-left: -20px;
-		margin-right: -20px;
 	}
 
 	// Rows not directly inside a container
-	div[class*='pwn-'] .row {
-		margin-left: -15px;
-		margin-right: -15px;
+	div[class^='pwn-'] .row {
+		margin-left: -@xs-padding;
+		margin-right: -@xs-padding;
 		.clearfix();
 	}
 }
 
 // Columns
 
-.pwn-xs-1, .pwn-xs-2, .pwn-xs-3, .pwn-xs-4, .pwn-xs-5, .pwn-xs-6, .pwn-xs-7, .pwn-xs-8, .pwn-xs-9, .pwn-xs-10, .pwn-xs-11, .pwn-xs-12,
-.pwn-sm-1, .pwn-sm-2, .pwn-sm-3, .pwn-sm-4, .pwn-sm-5, .pwn-sm-6, .pwn-sm-7, .pwn-sm-8, .pwn-sm-9, .pwn-sm-10, .pwn-sm-11, .pwn-sm-12,
-.pwn-md-1, .pwn-md-2, .pwn-md-3, .pwn-md-4, .pwn-md-5, .pwn-md-6, .pwn-md-7, .pwn-md-8, .pwn-md-9, .pwn-md-10, .pwn-md-11, .pwn-md-12,
-.pwn-lg-1, .pwn-lg-2, .pwn-lg-3, .pwn-lg-4, .pwn-lg-5, .pwn-lg-6, .pwn-lg-7, .pwn-lg-8, .pwn-lg-9, .pwn-lg-10, .pwn-lg-11, .pwn-lg-12,
-.pwn-xl-1, .pwn-xl-2, .pwn-xl-3, .pwn-xl-4, .pwn-xl-5, .pwn-xl-6, .pwn-xl-7, .pwn-xl-8, .pwn-xl-9, .pwn-xl-10, .pwn-xl-11, .pwn-xl-12 {
+div[class^='pwn-'] {
 	position: relative;
 	min-height: 1px;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-.pwn-xs-1, .pwn-xs-2, .pwn-xs-3, .pwn-xs-4, .pwn-xs-5, .pwn-xs-6, .pwn-xs-7, .pwn-xs-8, .pwn-xs-9, .pwn-xs-10, .pwn-xs-11, .pwn-xs-12 {
+	padding-left: @xs-padding;
+	padding-right: @xs-padding;
 	float: left;
 }
 
@@ -97,7 +107,7 @@ body {
 	.pwn-md-1, .pwn-md-2, .pwn-md-3, .pwn-md-4, .pwn-md-5, .pwn-md-6, .pwn-md-7, .pwn-md-8, .pwn-md-9, .pwn-md-10, .pwn-md-11, .pwn-md-12,
 	.pwn-lg-1, .pwn-lg-2, .pwn-lg-3, .pwn-lg-4, .pwn-lg-5, .pwn-lg-6, .pwn-lg-7, .pwn-lg-8, .pwn-lg-9, .pwn-lg-10, .pwn-lg-11, .pwn-lg-12,
 	.pwn-xl-1, .pwn-xl-2, .pwn-xl-3, .pwn-xl-4, .pwn-xl-5, .pwn-xl-6, .pwn-xl-7, .pwn-xl-8, .pwn-xl-9, .pwn-xl-10, .pwn-xl-11, .pwn-xl-12 {
-		float: left;
+		//float: left;
 	}
 
 	.pwn-xl-12, .pwn-lg-12, .pwn-md-12, .pwn-sm-12, .pwn-xs-12 {
@@ -149,28 +159,16 @@ body {
 	}
 }
 
-// -xs- ( 320px )
-@media screen and ( min-width: 200px ) {
-	.container {
-		padding-left: 15px;
-		padding-right: 15px;
-		width: 100%;
-	}
-
-	.container .row {
-		margin-left: -15px;
-		margin-right: -15px;
-	}
+// -xs- ( 200px - 567px )
+@media screen and ( min-width: @xs-min-screen-width ) {
+	// xs is default and shouldn't need any styles. Here for documentation purposes.
 }
 
-// -sm- ( 568px )
-@media screen and ( min-width: 568px ) {
-	.container {
-		width: 538px;
-	}
+// -sm- ( 568px - 767px )
+@media screen and ( min-width: @sm-min-screen-width ) {
 
-	.pwn-sm-1, .pwn-sm-2, .pwn-sm-3, .pwn-sm-4, .pwn-sm-5, .pwn-sm-6, .pwn-sm-7, .pwn-sm-8, .pwn-sm-9, .pwn-sm-10, .pwn-sm-11, .pwn-sm-12 {
-		float: left;
+	.container {
+		width: @sm-container;
 	}
 
 	.pwn-sm-12 {
@@ -222,21 +220,29 @@ body {
 	}
 }
 
-// -md- ( 768px )
-@media screen and ( min-width: 768px ) {
+// -md- ( 768px - 1023px )
+@media screen and ( min-width: @md-min-screen-width ) {
+
 	.container {
-		padding-left: 20px;
-		padding-right: 20px;
-		width: 728px;
+		width: @md-container;
+		padding-left: @md-padding;
+		padding-right: @md-padding;
 
 		.row {
-			margin-left: -20px;
-			margin-right: -20px;
+			margin-left: -@md-padding;
+			margin-right: -@md-padding;
+		}
+
+		// Rows not directly inside a container
+		div[class^='pwn-'] .row {
+			margin-left: -@md-padding;
+			margin-right: -@md-padding;
 		}
 	}
 
-	.pwn-md-1, .pwn-md-2, .pwn-md-3, .pwn-md-4, .pwn-md-5, .pwn-md-6, .pwn-md-7, .pwn-md-8, .pwn-md-9, .pwn-md-10, .pwn-md-11, .pwn-md-12 {
-		float: left;
+	div[class^='pwn-'] {
+		padding-left: @md-padding;
+		padding-right: @md-padding;
 	}
 
 	.pwn-md-12 {
@@ -288,14 +294,28 @@ body {
 	}
 }
 
-// -lg- ( 1024px )
-@media screen and ( min-width: 1024px ) {
+// -lg- ( 1024px - 1279px )
+@media screen and ( min-width: @lg-min-screen-width ) {
 	.container {
-		width: 984px;
+		width: @lg-container;
+		padding-left: @lg-padding;
+		padding-right: @lg-padding;
+
+		.row {
+			margin-left: -@lg-padding;
+			margin-right: -@lg-padding;
+		}
+
+		// Rows not directly inside a container
+		div[class^='pwn-'] .row {
+			margin-left: -@lg-padding;
+			margin-right: -@lg-padding;
+		}
 	}
 
-	.pwn-lg-1, .pwn-lg-2, .pwn-lg-3, .pwn-lg-4, .pwn-lg-5, .pwn-lg-6, .pwn-lg-7, .pwn-lg-8, .pwn-lg-9, .pwn-lg-10, .pwn-lg-11, .pwn-lg-12 {
-		float: left;
+	div[class^='pwn-'] {
+		padding-left: @lg-padding;
+		padding-right: @lg-padding;
 	}
 
 	.pwn-lg-12 {
@@ -348,13 +368,9 @@ body {
 }
 
 // -xl- ( 1280px )
-@media screen and ( min-width: 1280px ) {
+@media screen and ( min-width: @xl-min-screen-width ) {
 	.container {
-		width: 1240px;
-	}
-
-	.pwn-xl-1, .pwn-xl-2, .pwn-xl-3, .pwn-xl-4, .pwn-xl-5, .pwn-xl-6, .pwn-xl-7, .pwn-xl-8, .pwn-xl-9, .pwn-xl-10, .pwn-xl-11, .pwn-xl-12 {
-		float: left;
+		width: @xl-container;
 	}
 
 	.pwn-xl-12 {
@@ -406,31 +422,31 @@ body {
 	}
 }
 
-@media screen and ( min-width: 200px ) and ( max-width: 567px ) {
+@media screen and ( min-width: @xs-min-screen-width ) and ( max-width: @sm-min-screen-width - 1 ) {
 	.hidden-xs {
 		display: none !important;
 	}
 }
 
-@media screen and ( min-width: 568px )and ( max-width: 767px ) {
+@media screen and ( min-width: @sm-min-screen-width )and ( max-width: @md-min-screen-width - 1 ) {
 	.hidden-sm {
 		display: none !important;
 	}
 }
 
-@media screen and ( min-width: 768px ) and ( max-width: 1023px ) {
+@media screen and ( min-width: @md-min-screen-width ) and ( max-width: @lg-min-screen-width - 1 ) {
 	.hidden-md {
 		display: none !important;
 	}
 }
 
-@media screen and ( min-width: 1024px ) and ( max-width: 1279px ) {
+@media screen and ( min-width: @lg-min-screen-width ) and ( max-width: @xl-min-screen-width - 1 ) {
 	.hidden-lg {
 		display: none !important;
 	}
 }
 
-@media screen and ( min-width: 1280px ) {
+@media screen and ( min-width: @xl-min-screen-width ) {
 	.hidden-xl {
 		display: none !important;
 	}
