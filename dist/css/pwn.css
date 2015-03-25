@@ -1064,6 +1064,7 @@ p:last-child {
   margin-bottom: .2em;
 }
 a {
+  color: #26a9e0;
   text-decoration: none;
 }
 a:hover {
