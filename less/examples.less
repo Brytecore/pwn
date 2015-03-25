@@ -40,10 +40,29 @@
 	}
 }
 
+.example.headings {
+	table {
+		margin: 0;
+
+		tr {
+			border-bottom: 1px dashed @color-divider;
+
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+
+		td {
+			padding: 0;
+		}
+	}
+}
+
 .syntax {
 	border: 1px solid @color-divider;
 	background-color: #fff;
 	padding: 1.2em 0 0;
+	margin-bottom: 1.4em;
 
 	.clearfix();
 	position: relative;
@@ -80,6 +99,8 @@
 
 .grid-demo {
 	position: relative;
+	margin-top: 1.4em;
+	margin-bottom: 1.4em;
 
 	.row {
 		margin-bottom: 12px;

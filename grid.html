@@ -5,7 +5,11 @@
 <head lang="en">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--prod-->
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/Brytecore/pwn/master/dist/css/pwn.min.css">
+	<!--dev
+	<link rel="stylesheet" type="text/css" href="../pwn/dist/css/pwn.min.css">
+	-->
 	<link rel="stylesheet" type="text/css" href="css/docs-libs.min.css">
 	<link rel="stylesheet" type="text/css" href="css/docs.min.css">
 	<title>Pwn Grid System</title>
@@ -18,7 +22,7 @@
 				<div class="pwn-xs-12">
 					<h1>Grid System</h1>
 					<p>
-						The scaffolding that adapts to the user's screen size.
+						Create pages that respond gracefully to varying screen sizes and device rotation.
 					</p>
 				</div>
 			</div>
@@ -27,14 +31,84 @@
 	<div class="container">
 		<div class="row">
 			<div class="pwn-xs-12">
-				<h2>
-					Overview
-				</h2>
+				<h2>Overview</h2>
 				<p>
 					Every responsive stylesheet framework is only as good as its grid system. The Pwn grid
 					was designed to give you direct control over the user interface on all screen sizes and
 					devices.
 				</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="pwn-xs-12">
+				<h2>Setting Up Your Page</h2>
+				<p>
+					Follow these instructions to get the Pwn framework running properly inside your HTML page.
+				</p>
+				<h3>Specify the HTML 5 doctype</h3>
+				<p>
+					In order for your page to properly respond to screen sizes, you must use HTML 5. This begins by
+					specifying the doctype as html. At the very top of your page, add the doctype above your
+					<code>html</code> tag:
+				</p>
+				<div class="syntax">
+<pre class="brush:html;gutter:false">
+&lt;!DOCTYPE html&gt;
+</pre>
+				</div>
+				<p>
+					Modify your <code>html</code> tag to include the language.
+				</p>
+				<div class="syntax">
+<pre class="brush:html;gutter:false">
+&lt;html lang="en"&gt;
+</pre>
+				</div>
+				<p>
+					Include the meta viewport tag at the top of your <code>head</code> section.
+				</p>
+				<div class="syntax">
+<pre class="brush:html;gutter:false">
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+</pre>
+				</div>
+				<h3>Include the Pwn CSS</h3>
+				<p>
+					Copy pwn.min.css into your website and add this <code>&lt;link&gt;</code> element to your page's
+					<code>&lt;head&gt;</code> section:
+				</p>
+				<div class="syntax">
+<pre class="brush: html;gutter: false;">
+&lt;link rel="stylesheet" type="text/css" href="/path-on-your-server/pwn.min.css"&gt;
+</pre>
+				</div>
+				<h3>Putting It Together</h3>
+				<p>
+					The very top of your html page should look very similar to this snippet.
+				</p>
+				<div class="syntax">
+<pre class="brush:html;gutter:false">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+	&lt;link rel="stylesheet" type="text/css" href="/path-on-your-server/pwn.min.css"&gt;
+	&lt;title&gt;Your page title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="pwn-xs-12">
+				<h2>
+					Grid Syntax
+				</h2>
 				<p>
 					The core element of the grid is the container, identified as a div with the class
 					<code>container</code>. It controls the width of the content, and resizes dynamically at certain
@@ -323,7 +397,7 @@
 
 	{% include footer.html %}
 
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="https://rawgit.com/Brytecore/pwn/master/dist/js/pwn.min.js"></script>
 	<script type="text/javascript" src="js/docs-libs.min.js"></script>
 	<script type="text/javascript" src="js/pwn-docs.min.js"></script>

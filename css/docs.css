@@ -4,10 +4,16 @@ body {
 body.docs-home {
   padding-top: 0;
 }
-h2 {
+div[class^='pwn-'] > h2 {
   font-weight: 400;
   border-bottom: 1px solid #eaeaea;
-  padding-bottom: .5em;
+  padding-bottom: .2em;
+  margin-bottom: .4em;
+  margin-top: 1.5em;
+}
+div[class^='pwn-'] > h3 {
+  font-size: 1.4em;
+  margin-bottom: .4em;
 }
 .docs-hero {
   background: #efefef;
@@ -50,10 +56,12 @@ h2 {
 .docs-header h1 {
   color: #ffffff;
   font-weight: 400;
+  margin-bottom: 0;
 }
 .docs-header p {
   color: #ffffff;
   font-size: 1.4em;
+  margin-bottom: 1.5em;
 }
 .docs-footer {
   font-size: .8em;
@@ -110,10 +118,23 @@ h2 {
 .example .syntax .syntaxhighlighter.nogutter {
   margin-bottom: 1em !important;
 }
+.example.headings table {
+  margin: 0;
+}
+.example.headings table tr {
+  border-bottom: 1px dashed #eaeaea;
+}
+.example.headings table tr:last-child {
+  border-bottom: 0;
+}
+.example.headings table td {
+  padding: 0;
+}
 .syntax {
   border: 1px solid #eaeaea;
   background-color: #fff;
   padding: 1.2em 0 0;
+  margin-bottom: 1.4em;
   position: relative;
 }
 .syntax:before,
@@ -151,6 +172,8 @@ h2 {
 }
 .grid-demo {
   position: relative;
+  margin-top: 1.4em;
+  margin-bottom: 1.4em;
 }
 .grid-demo .row {
   margin-bottom: 12px;
