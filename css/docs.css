@@ -149,15 +149,41 @@ h2 {
 .syntaxhighlighter div .line.alt1 {
   background-color: #f8f8f8 !important;
 }
+.grid-demo {
+  position: relative;
+}
 .grid-demo .row {
   margin-bottom: 12px;
 }
 .grid-demo .grid-name {
-  background-color: rgba(39, 169, 224, 0.05);
+  background-color: #27a9e0;
   text-align: center;
   padding: 10px 0;
-  font-weight: 400;
-  font-size: .8em;
+  font-weight: 700;
+  font-size: .9em;
+  color: #fff;
+  white-space: nowrap;
+}
+.grid-demo div[class^='pwn-'] {
+  background-color: rgba(255, 130, 0, 0.25);
+}
+.grid-demo .grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.grid-demo .grid-overlay .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.grid-demo .grid-overlay div[class^='pwn-'] {
+  background-color: transparent;
+  border-right: 1px dashed red;
+  height: 612px;
+}
+.grid-demo .grid-overlay div[class^='pwn-']:first-child {
+  border-left: 1px dashed red;
 }
 .nav-menu {
   text-transform: uppercase;

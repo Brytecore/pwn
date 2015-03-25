@@ -1,4 +1,5 @@
-@grid-example-bg: rgba(39, 169, 224, 0.05);
+@grid-example-bg: #27a9e0;
+@grid-example-padding-bg: rgba(255, 130, 0, 0.25);
 
 .example {
 	padding: 2.5em 1.25em 1.25em;
@@ -78,6 +79,8 @@
 }
 
 .grid-demo {
+	position: relative;
+
 	.row {
 		margin-bottom: 12px;
 	}
@@ -86,7 +89,35 @@
 		background-color: @grid-example-bg;
 		text-align: center;
 		padding: 10px 0;
-		font-weight: 400;
-		font-size: .8em;
+		font-weight: 700;
+		font-size: .9em;
+		color: #fff;
+		white-space: nowrap;
+	}
+
+	div[class^='pwn-'] {
+		background-color: @grid-example-padding-bg;
+	}
+
+	.grid-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+		.row {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		div[class^='pwn-'] {
+			background-color: transparent;
+			border-right: 1px dashed red;
+			height: 612px;
+
+			&:first-child {
+				border-left: 1px dashed red;
+			}
+		}
 	}
 }
