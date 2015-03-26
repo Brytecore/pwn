@@ -170,11 +170,23 @@
 		<div class="row">
 			<div class="pwn-xs-12">
 				<h2>Tabs</h2>
-
 				<p>
-
+					Tabs allow you to use available screen space efficiently by grouping content together logically. The Pwn
+					tabs component requires you to class and nest your divs properly. The component container requires
+					a <code>pwn-tabs</code> class, inside of which are two divs, classed <code>tabs</code> and
+					<code>pages</code>.
 				</p>
-
+				<p>
+					Each tab requires a <code>tab</code> class and each page a <code>page</code> class. Add properties
+					to each tab named <code>data-tab</code> with a unique tab name, then add a matching property on the
+					page it should open. Clicking a tab will show its associated page. Adding the <code>active</code>
+					class to a tab (and matching page) allows you to specify which tab is open by default.
+				</p>
+				<p>
+					When adding content inside a page, you can use the Pwn grid by starting with a
+					<code>&lt;div class="row"&gt;</code> tag, then the appropriate <code>pwn-[x]-[y]</code> divs
+					inside the row. You do not need a <code>&lt;div class="container"&gt;</code> inside a tab page.
+				</p>
 				<div class="example form">
 					<div class="pwn-tabs">
 						<div class="tabs">
@@ -189,10 +201,8 @@
 										<h3>Millenium Falcon</h3>
 										<p>
 											It's the ship that made the Kessel Run in less than twelve parsecs. I've
-											outrun
-											Imperial starships. Not the local bulk cruisers mind you, I'm talking about
-											the big
-											Corellian ships now.
+											outrun Imperial starships. Not the local bulk cruisers mind you, I'm talking
+											about the big Corellian ships now.
 										</p>
 									</div>
 									<div class="pwn-md-4">
@@ -256,10 +266,30 @@
 								</div>
 							</div>
 							<div class="page" data-tab="tab3">
-								<h3>Page 3</h3>
-								<p>
-									This is the third page of this tabbed control.
-								</p>
+								<div class="row">
+									<div class="pwn-xs-12">
+										<h3>C3PO</h3>
+									</div>
+								</div>
+								<div class="row">
+									<div class="pwn-lg-10 pwn-md-8 pwn-sm-6">
+										<p>
+											I've just about had enough of you. Go that way. You'll be malfunctioning
+											within a day, you near-sighted scrap pile. And don't let me catch you
+											following me begging for help because you won't get it.
+										</p>
+									</div>
+									<div class="pwn-lg-2 pwn-md-4 pwn-sm-6">
+										<figure>
+											<img title="By Whitney Ann Wilkinson (Own work) [BY-NC-ND 3.0 (https://creativecommons.org/licenses/by-nc-nd/3.0/us/)], via Deviant Art"
+											src="images/c3po_by_whitneyw.jpg">
+											<figcaption class="attribution">
+												<a href="http://whitneyw.deviantart.com/art/C3PO-321457258">CC
+													BY-NC-ND 3.0, Deviant Art</a>
+											</figcaption>
+										</figure>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
