@@ -7,9 +7,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Use these Pwn JavaScript components for intuitive user interfaces that match the Pwn CSS framework styles.">
-	<!--prod-->
+	<!--prod
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/Brytecore/pwn/master/dist/css/pwn.min.css">
-	<!--dev
+	<!--dev-->
 	<link rel="stylesheet" type="text/css" href="../pwn/dist/css/pwn.min.css">
 	-->
 	<link rel="stylesheet" type="text/css" href="css/docs-libs.min.css">
@@ -184,16 +184,76 @@
 						</div>
 						<div class="pages">
 							<div class="page active" data-tab="tab1">
-								<h3>Page 1</h3>
-								<p>
-									This is the first page of this tabbed control.
-								</p>
+								<div class="row">
+									<div class="pwn-md-8">
+										<h3>Millenium Falcon</h3>
+										<p>
+											It's the ship that made the Kessel Run in less than twelve parsecs. I've
+											outrun
+											Imperial starships. Not the local bulk cruisers mind you, I'm talking about
+											the big
+											Corellian ships now.
+										</p>
+									</div>
+									<div class="pwn-md-4">
+										<figure>
+											<img title="By Robert Brink (Own work) [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons"
+												src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Millennium_Falcon_in_LEGO.jpg/320px-Millennium_Falcon_in_LEGO.jpg">
+											<figcaption class="attribution">
+												<a href="http://commons.wikimedia.org/wiki/File%3AMillennium_Falcon_in_LEGO.jpg">CC BY-SA 3.0, Wikimedia</a>
+											</figcaption>
+										</figure>
+									</div>
+								</div>
 							</div>
 							<div class="page" data-tab="tab2">
-								<h3>Page 2</h3>
-								<p>
-									This is the second page of this tabbed control.
-								</p>
+								<div class="row">
+									<div class="pwn-sm-12">
+										<h3>Greedo</h3>
+									</div>
+								</div>
+								<div class="row">
+									<div class="pwn-md-4">
+										<figure>
+											<img title="Image capture from Star Wars, Episode IV: A New Hope [Fair Use], via Wookiepedia"
+												 src="http://img1.wikia.nocookie.net/__cb20130225041305/starwars/images/thumb/a/a5/Greedo-hd.png/320px-Greedo-hd.png">
+											<figcaption class="attribution">
+												<a href="http://starwars.wikia.com/wiki/File:Greedo-hd.png">Greedo, via Wookipedia</a>
+											</figcaption>
+										</figure>
+									</div>
+									<div class="pwn-md-4">
+										<p>
+											It's too late. You should have paid him when you had the chance. Jabba's put a price
+											on your head so large, every bounty hunter in the galaxy will be looking for you.
+											I'm lucky I found you first.
+										</p>
+									</div>
+									<div class="pwn-md-4">
+										<table class="zebra">
+											<tr>
+												<th>Species</th>
+												<td>Rodian</td>
+											</tr>
+											<tr>
+												<td>Eye color</td>
+												<td>Black</td>
+											</tr>
+											<tr>
+												<td>Skin color</td>
+												<td>Green</td>
+											</tr>
+											<tr>
+												<td>Occupation</td>
+												<td>Bounty hunter</td>
+											</tr>
+											<tr>
+												<td>Shoots first?</td>
+												<td>No</td>
+											</tr>
+										</table>
+									</div>
+								</div>
 							</div>
 							<div class="page" data-tab="tab3">
 								<h3>Page 3</h3>
@@ -239,11 +299,11 @@
 	{% include footer.html %}
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<!--prod-->
+	<!--prod
 	<script type="text/javascript" src="https://rawgit.com/Brytecore/pwn/master/dist/js/pwn.min.js"></script>
-	<!--dev
+	<!--dev-->
 	<script type="text/javascript" src="../pwn/dist/js/pwn.js"></script>
-	-->
+
 	<script type="text/javascript" src="js/docs-libs.min.js"></script>
 	<script type="text/javascript" src="js/pwn-docs.min.js"></script>
 	<script type="text/javascript">

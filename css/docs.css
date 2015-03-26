@@ -212,6 +212,15 @@ div[class^='pwn-'] > h3 {
 .pwn-tabs .page h3 {
   margin-top: 0;
 }
+.pwn-tabs .page figure {
+  margin: 0;
+}
+.pwn-tabs .page figure img {
+  width: 100%;
+}
+.pwn-tabs .page table {
+  margin-top: 0;
+}
 .nav-menu {
   text-transform: uppercase;
 }
