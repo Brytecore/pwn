@@ -209,6 +209,9 @@ div[class^='pwn-'] > h3 {
 .grid-demo .grid-overlay div[class^='pwn-']:first-child {
   border-left: 1px dashed red;
 }
+.pwn-tabs .page h3 {
+  margin-top: 0;
+}
 .nav-menu {
   text-transform: uppercase;
 }

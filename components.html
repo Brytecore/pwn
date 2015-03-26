@@ -164,6 +164,78 @@
 		</div>
 	</div>
 
+	<div class="container">
+		<a id="tabs"></a>
+
+		<div class="row">
+			<div class="pwn-xs-12">
+				<h2>Tabs</h2>
+
+				<p>
+
+				</p>
+
+				<div class="example form">
+					<div class="pwn-tabs">
+						<div class="tabs">
+							<div class="tab active" data-tab="tab1">Tab 1</div>
+							<div class="tab" data-tab="tab2">Tab 2</div>
+							<div class="tab" data-tab="tab3">Tab 3</div>
+						</div>
+						<div class="pages">
+							<div class="page active" data-tab="tab1">
+								<h3>Page 1</h3>
+								<p>
+									This is the first page of this tabbed control.
+								</p>
+							</div>
+							<div class="page" data-tab="tab2">
+								<h3>Page 2</h3>
+								<p>
+									This is the second page of this tabbed control.
+								</p>
+							</div>
+							<div class="page" data-tab="tab3">
+								<h3>Page 3</h3>
+								<p>
+									This is the third page of this tabbed control.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="syntax">
+<pre class="brush: javascript;html-script: true">
+&lt;div class="pwn-tabs"&gt;
+	&lt;div class="tabs"&gt;
+		&lt;div class="tab active" data-tab="tab1"&gt;Tab 1&lt;/div&gt;
+		&lt;div class="tab" data-tab="tab2"&gt;Tab 2&lt;/div&gt;
+		&lt;div class="tab" data-tab="tab3"&gt;Tab 3&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="pages"&gt;
+		&lt;div class="page active" data-tab="tab1"&gt;
+			&hellip;
+		&lt;/div&gt;
+		&lt;div class="page" data-tab="tab2"&gt;
+			&hellip;
+		&lt;/div&gt;
+		&lt;div class="page" data-tab="tab3"&gt;
+			&hellip;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script type="text/javascript"&gt;
+	// Don't forget to wrap your code in the jQuery .ready() function (not shown).
+	$( '.pwn-tabs' ).pwn_tabs();
+&lt;/script&gt;
+</pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	{% include footer.html %}
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -180,6 +252,7 @@
 				$( "#checkbox-demo" ).pwn_checkbox();
 				$( 'label.radio input' ).pwn_radio();
 				$( "#select-demo" ).pwn_select();
+				$( '.pwn-tabs' ).pwn_tabs();
 			}
 
 			$( function () {
