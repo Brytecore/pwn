@@ -4,17 +4,6 @@ body {
 body.docs-home {
   padding-top: 0;
 }
-div[class^='pwn-'] > h2 {
-  font-weight: 400;
-  border-bottom: 1px solid #eaeaea;
-  padding-bottom: .2em;
-  margin-bottom: .4em;
-  margin-top: 1.5em;
-}
-div[class^='pwn-'] > h3 {
-  font-size: 1.4em;
-  margin-bottom: .4em;
-}
 .docs-hero {
   background: #efefef;
   padding: 60px 0;
@@ -37,10 +26,10 @@ div[class^='pwn-'] > h3 {
 .docs-home p {
   text-align: center;
 }
-.docs-home .nyi {
+.docs-home .pwn-notification {
   margin-top: 2em;
 }
-.docs-home .nyi:before {
+.docs-home .pwn-notification:before {
   content: "Use at your own risk";
 }
 .docs-home .docs-download {
@@ -88,7 +77,7 @@ div[class^='pwn-'] > h3 {
 }
 .example {
   padding: 2.5em 1.25em 1.25em;
-  margin-top: 20px;
+  margin-top: 0;
   border: 1px solid #eaeaea;
   background-color: #f5f5f5;
   position: relative;
@@ -220,6 +209,15 @@ div[class^='pwn-'] > h3 {
 }
 .pwn-tabs .page table {
   margin-top: 0;
+}
+.tabChanged-demo .result {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  padding: 20px;
+  margin-top: 1px;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #27a9e0;
 }
 .nav-menu {
   text-transform: uppercase;

@@ -324,6 +324,104 @@
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="pwn-xs-12">
+				<h3>Tab Events</h3>
+				<p>
+					The following events are available on elements using the Pwn tabs plugin.
+				</p>
+				<table class="border-all">
+					<thead>
+						<tr>
+							<th>Event Name</th>
+							<th>Parameters</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>tabChanged</td>
+							<td>element, tabName</td>
+							<td>
+								Triggers when a user changes a tab. <code>tabName</code> is the
+								value of the <code>data-tab</code> attribute on the tab element.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h4>tabChanged Demo</h4>
+				<div class="example form tabChanged-demo">
+					<div class="row">
+						<div class="pwn-md-6">
+							<div id="tabs-demo" class="pwn-tabs">
+								<div class="tabs">
+									<div class="tab active" data-tab="True Love">Tab 1</div>
+									<div class="tab" data-tab="The Sicilian">Tab 2</div>
+								</div>
+								<div class="page active" data-tab="True Love">
+									<div class="row">
+										<div class="pwn-xs-12">
+											<h3>True Love</h3>
+											<p>
+												Sonny, true love is the greatest thing in the world. Except for a nice
+												MLT; mutton, lettuce and tomato sandwich. Where the mutton is nice and
+												lean and the tomato is ripe. They’re so perky, I love that.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="page" data-tab="The Sicilian">
+									<div class="row">
+										<div class="pwn-xs-12">
+											<h3>The Sicilian</h3>
+											<p>
+												You fell victim to one of the classic blunders, the most famous of which
+												is, “never get involved in a land war in Asia.” But only slightly less
+												well-known is this. “Never go against a Sicilian when death is on the
+												line!”
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pwn-md-6">
+							<div class="results">
+								<label>Tab Clicked:</label>
+								<div class="result" id="tabChanged">
+									None
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="syntax">
+<pre class="brush:javascript;html-script: true">
+&lt;div class="pwn-tabs"&gt;
+	&lt;div class="tabs"&gt;
+		&lt;div class="tab active" data-tab="tab1"&gt;Tab 1&lt;/div&gt;
+		&lt;div class="tab" data-tab="tab2"&gt;Tab 2&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="pages"&gt;
+		&lt;div class="page active" data-tab="tab1"&gt;
+	&hellip;
+	&lt;/div&gt;
+		&lt;div class="page" data-tab="tab2"&gt;
+	&hellip;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script type="text/javascript"&gt;
+	// Don't forget to wrap your code in the jQuery .ready() function (not shown).
+	$( ".pwn-tabs" ).pwn_tabs().on( "tabChanged", function( e, t ) {
+		$( "#tabChanged" ).text( t );
+	});
+&lt;/script&gt;
+</pre>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	{% include footer.html %}
@@ -340,9 +438,12 @@
 		(function ( $, undefined ) {
 			function run_demos() {
 				$( "#checkbox-demo" ).pwn_checkbox();
-				$( 'label.radio input' ).pwn_radio();
+				$( "label.radio input" ).pwn_radio();
 				$( "#select-demo" ).pwn_select();
-				$( '.pwn-tabs' ).pwn_tabs();
+				$( ".pwn-tabs" ).pwn_tabs();
+				$( "#tabs-demo" ).on( "tabChanged", function( e, t ) {
+					$( "#tabChanged" ).text( t );
+				});
 			}
 
 			$( function () {
