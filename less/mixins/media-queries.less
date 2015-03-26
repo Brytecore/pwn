@@ -16,37 +16,37 @@
 	}
 */
 
-// -xs- ( 320px )
+// -xs-
 .xs( @rules ) {
-	@media screen and ( min-width: 200px ) {
+	@media screen and ( min-width: @xs-min-screen-width ) {
 		@rules();
 	}
 }
 
-// -sm- ( 568px )
+// -sm-
 .sm( @rules ) {
-	@media screen and ( min-width: 568px ) {
+	@media screen and ( min-width: @sm-min-screen-width ) {
 		@rules();
 	}
 }
 
-// -md- ( 768px )
+// -md-
 .md( @rules ) {
-	@media screen and ( min-width: 768px ) {
+	@media screen and ( min-width: @md-min-screen-width ) {
 		@rules();
 	}
 }
 
-// -lg- ( 1024px )
+// -lg-
 .lg( @rules ) {
-	@media screen and ( min-width: 1024px ) {
+	@media screen and ( min-width: @lg-min-screen-width ) {
 		@rules();
 	}
 }
 
-// -xl- ( 1280px )
+// -xl-
 .xl( @rules ) {
-	@media screen and ( min-width: 1280px ) {
+	@media screen and ( min-width: @xl-min-screen-width ) {
 		@rules();
 	}
 }

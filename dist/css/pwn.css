@@ -1824,6 +1824,9 @@ label.radio .pwn-radio {
 .pwn-tabs:after {
   clear: both;
 }
+.pwn-tabs .tabs {
+  display: none;
+}
 .pwn-tabs .tab {
   z-index: 2;
   float: left;
@@ -1856,15 +1859,59 @@ label.radio .pwn-radio {
 .pwn-tabs .tab.active:hover {
   background-color: #fff;
 }
+.pwn-tabs .page-header {
+  z-index: 2;
+  line-height: 2em;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: moz-none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #dedede;
+  border-top-width: 0;
+}
+.pwn-tabs .page-header:first-child {
+  border-top-width: 1px;
+}
+.pwn-tabs .page-header:hover {
+  background-color: #ededed;
+}
+.pwn-tabs .page-header.active {
+  border-bottom: 0;
+  color: #26a9e0;
+  background-color: #fff;
+  cursor: default;
+}
+.pwn-tabs .page-header.active:hover {
+  background-color: #fff;
+}
 .pwn-tabs .page {
   z-index: 1;
   display: none;
   background-color: #fff;
-  min-height: 200px;
   border: 1px solid #dedede;
-  margin-top: 33px;
   padding: 20px;
 }
 .pwn-tabs .page.active {
   display: block;
+  border-top-width: 0;
+}
+@media screen and (min-width: 768px) {
+  .pwn-tabs .tabs {
+    display: block;
+  }
+  .pwn-tabs .page-header {
+    display: none;
+  }
+  .pwn-tabs .page {
+    margin-top: 33px;
+    min-height: 200px;
+  }
+  .pwn-tabs .page:active {
+    border-top-width: 1px;
+  }
 }
