@@ -1,4 +1,4 @@
-@table-padding: 8px 6px;
+@table-padding: 10px 12px;
 
 table {
 	margin-top: 20px;
@@ -12,17 +12,57 @@ table {
 		}
 
 	}
-}
 
-th {
-	font-weight: 400;
-	text-align: left;
-}
+	&.border-inside {
 
-th, td {
-	padding: @table-padding;
+		thead th {
+			border-bottom: 1px solid @color-divider;
+		}
 
-	&.center {
-		text-align: center;
+		tr {
+			border-top: 1px solid @color-divider;
+
+			&:first-child {
+				border-top-width: 0;
+			}
+		}
+
+		td, th {
+			border-left: 1px solid @color-divider;
+
+			&:first-child {
+				border-left-width: 0;
+			}
+		}
+	}
+
+	&.border-outside {
+		border: 1px solid @color-divider;
+	}
+
+	&.border-all {
+		th, td {
+			border: 1px solid @color-divider;
+		}
+
+	}
+
+	thead {
+		tr {
+			background-color: @color-faint-background;
+		}
+	}
+
+	th {
+		font-weight: 700;
+		text-align: left;
+	}
+
+	th, td {
+		padding: @table-padding;
+
+		&.center {
+			text-align: center;
+		}
 	}
 }

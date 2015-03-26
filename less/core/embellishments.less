@@ -20,15 +20,14 @@ span.caret-down:after {
 	border-top: 4px solid @text-color;
 }
 
-// "Not yet implemented" box
-.nyi {
+.pwn-notification {
 	padding: 2em;
-	background-color: fade( @color-information, 10% );
+	background-color: @color-notification-bg;
 	line-height: 1.5em;
 
 	&:before {
-		color: @color-information;
-		content: "Not Yet Implemented";
+		color: @color-notification-heading;
+		content: "Notice";
 		display: block;
 		font-weight: 700;
 		font-size: .8em;
