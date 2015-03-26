@@ -1,10 +1,19 @@
 {
-	"name": "pwn",
-	"version": "0.0.1",
+	"name": "Pwn",
+	"description": "A lightweight, responsive CSS framework built for today's devices.",
+	"version": "0.0.2",
 	"author": "Brytecore",
+	"homepage": "http://pwncss.com",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Brytecore/pwn.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Brytecore/pwn/issues"
+	},
+	"license": {
+		"type": "MIT",
+		"url": "https://github.com/Brytecore/pwn/blob/master/LICENSE"
 	},
 	"devDependencies": {
 		"grunt": "~0.4.5",

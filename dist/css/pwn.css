@@ -1,5 +1,8 @@
-/*! pwn: a Brytecore css framework
-*/
+/*! Pwn CSS framework v0.0.1 - http://www.pwncss.com
+ *  Copyright 2015 Brytecore, LLC
+ *  Licensed under MIT - https://github.com/Brytecore/pwn/blob/master/LICENSE
+ */
+/* Pwn: a Brytecore CSS framework */
 /*
 	These mixins wrap your ruleset in a media query at the root.
 
@@ -373,7 +376,7 @@ td,
 th {
   padding: 0;
 }
-/**
+/*
  * Grid system for the Pwn framework.
  */
 .container {

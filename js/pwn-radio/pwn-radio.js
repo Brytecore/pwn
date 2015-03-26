@@ -1,4 +1,4 @@
-/*! Pwn INPUT TYPE=RADIO replacement. */
+/* Pwn INPUT TYPE=RADIO replacement. */
 
 ( function ( $, undefined ) {
 
@@ -9,7 +9,8 @@
 			var name = t.attr( "name" );
 
 			if ( 'input' !== t[0].tagName.toLowerCase() ||
-				'radio' !== t.attr('type') ) {
+				'radio' !== t.attr('type') ||
+				'true' === t.attr( 'data-pwned' ) ) {
 				return;
 			}
 
@@ -23,7 +24,7 @@
 			var label = t.parent( 'label.radio' );
 
 			t.before( rd );
-			t.hide();
+			t.hide().attr( 'data-pwned', 'true' );
 
 			if ( 0 < label.length ) {
 				label.on( "click touchstart", function ( e ) {

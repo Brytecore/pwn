@@ -2,8 +2,16 @@ module.exports = function( grunt ) {
 	require( "matchdep" ).filterDev( "grunt-*" ).forEach( grunt.loadNpmTasks );
 
 	grunt.initConfig({
+		pkg: grunt.file.readJSON( 'package.json' ),
 		concat: {
 			pwn_js: {
+				options: {
+					banner:
+						"/*! Pwn JavaScript library v<%= pkg.version %> - http://www.pwncss.com\n" +
+						" *  Copyright 2015 Brytecore, LLC\n" +
+						" *  Licensed under MIT - https://github.com/Brytecore/pwn/blob/master/LICENSE\n" +
+						" */\n"
+				},
 				src: [
 					"js/**/*.js"
 				], dest: "dist/js/pwn.js"
@@ -19,6 +27,13 @@ module.exports = function( grunt ) {
 			}
 		},
 		less: {
+			options: {
+				banner:
+					"/*! Pwn CSS framework v<%= pkg.version %> - http://www.pwncss.com\n" +
+					" *  Copyright 2015 Brytecore, LLC\n" +
+					" *  Licensed under MIT - https://github.com/Brytecore/pwn/blob/master/LICENSE\n" +
+					" */\n"
+			},
 			pwn_less: {
 				src: "less/pwn.less",
 				dest: "dist/css/pwn.css"

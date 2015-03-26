@@ -1,4 +1,4 @@
-/*! Pwn SELECT replacement. */
+/* Pwn SELECT replacement. */
 
 ( function ( $, undefined ) {
 
@@ -7,7 +7,8 @@
 		return this.each( function () {
 			var t = $( this );
 
-			if ( 'select' !== t[0].tagName.toLowerCase() ) {
+			if ( 'select' !== t[0].tagName.toLowerCase() ||
+				'true' === t.attr( 'data-pwned' ) ) {
 				return;
 			}
 
@@ -54,7 +55,7 @@
 
 			// Insert the pwn select and hide the html select
 			t.before( cont );
-			t.hide();
+			t.hide().attr( 'data-pwned', 'true' );
 
 			// Attach events
 

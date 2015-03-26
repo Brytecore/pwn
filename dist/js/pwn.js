@@ -1,4 +1,8 @@
-/*! Pwn INPUT TYPE=CHECKBOX replacement. */
+/*! Pwn JavaScript library v0.0.2 - http://www.pwncss.com
+ *  Copyright 2015 Brytecore, LLC
+ *  Licensed under MIT - https://github.com/Brytecore/pwn/blob/master/LICENSE
+ */
+/* Pwn INPUT TYPE=CHECKBOX replacement. */
 
 ( function ( $, undefined ) {
 
@@ -8,7 +12,8 @@
 			var t = $( this );
 
 			if ( 'input' !== t[0].tagName.toLowerCase() ||
-				'checkbox' !== t.attr('type') ) {
+				'checkbox' !== t.attr('type') ||
+				'true' === t.attr( 'data-pwned' ) ) {
 				return;
 			}
 
@@ -21,7 +26,7 @@
 			var label = t.parent( 'label.checkbox' );
 
 			t.before( cb );
-			t.hide();
+			t.hide().attr( 'data-pwned', 'true' );
 
 			if ( 0 < label.length ) {
 				label.on( "click touchstart", function ( e ) {
@@ -45,7 +50,7 @@
 	};
 }( jQuery ) );
 
-/*! Pwn INPUT TYPE=RADIO replacement. */
+/* Pwn INPUT TYPE=RADIO replacement. */
 
 ( function ( $, undefined ) {
 
@@ -56,7 +61,8 @@
 			var name = t.attr( "name" );
 
 			if ( 'input' !== t[0].tagName.toLowerCase() ||
-				'radio' !== t.attr('type') ) {
+				'radio' !== t.attr('type') ||
+				'true' === t.attr( 'data-pwned' ) ) {
 				return;
 			}
 
@@ -70,7 +76,7 @@
 			var label = t.parent( 'label.radio' );
 
 			t.before( rd );
-			t.hide();
+			t.hide().attr( 'data-pwned', 'true' );
 
 			if ( 0 < label.length ) {
 				label.on( "click touchstart", function ( e ) {
@@ -96,7 +102,7 @@
 	};
 }( jQuery ) );
 
-/*! Pwn SELECT replacement. */
+/* Pwn SELECT replacement. */
 
 ( function ( $, undefined ) {
 
@@ -105,7 +111,8 @@
 		return this.each( function () {
 			var t = $( this );
 
-			if ( 'select' !== t[0].tagName.toLowerCase() ) {
+			if ( 'select' !== t[0].tagName.toLowerCase() ||
+				'true' === t.attr( 'data-pwned' ) ) {
 				return;
 			}
 
@@ -152,7 +159,7 @@
 
 			// Insert the pwn select and hide the html select
 			t.before( cont );
-			t.hide();
+			t.hide().attr( 'data-pwned', 'true' );
 
 			// Attach events
 
@@ -196,6 +203,21 @@
 					arrow_cont.removeClass( 'expanded' );
 				}
 			} )
+
+		} );
+	};
+
+}( jQuery ) );
+
+/* Pwn tabbed interface. */
+
+( function ( $, undefined ) {
+
+	$.fn.pwn_tabs = function () {
+
+		return this.each( function () {
+			var t = $( this );
+
 
 		} );
 	};

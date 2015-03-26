@@ -1,4 +1,4 @@
-/*! Pwn INPUT TYPE=CHECKBOX replacement. */
+/* Pwn INPUT TYPE=CHECKBOX replacement. */
 
 ( function ( $, undefined ) {
 
@@ -8,7 +8,8 @@
 			var t = $( this );
 
 			if ( 'input' !== t[0].tagName.toLowerCase() ||
-				'checkbox' !== t.attr('type') ) {
+				'checkbox' !== t.attr('type') ||
+				'true' === t.attr( 'data-pwned' ) ) {
 				return;
 			}
 
@@ -21,7 +22,7 @@
 			var label = t.parent( 'label.checkbox' );
 
 			t.before( cb );
-			t.hide();
+			t.hide().attr( 'data-pwned', 'true' );
 
 			if ( 0 < label.length ) {
 				label.on( "click touchstart", function ( e ) {
