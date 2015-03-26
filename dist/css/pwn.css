@@ -482,6 +482,7 @@ th {
   padding-left: 10px;
   padding-right: 10px;
   float: left;
+  width: 100%;
 }
 .pwn-xs-12 {
   width: 100%;
@@ -1058,6 +1059,13 @@ h5 {
 }
 img {
   max-width: 100%;
+}
+figure figcaption.attribution,
+figure figcaption.attribution a {
+  color: #aaaaaa;
+  font-size: .8em;
+  text-align: center;
+  padding-top: 8px;
 }
 p {
   margin: .2em 0 1.8em;
