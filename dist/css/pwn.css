@@ -1,4 +1,4 @@
-/*! Pwn CSS framework v0.0.1 - http://www.pwncss.com
+/*! Pwn CSS framework v0.0.2 - http://www.pwncss.com
  *  Copyright 2015 Brytecore, LLC
  *  Licensed under MIT - https://github.com/Brytecore/pwn/blob/master/LICENSE
  */
@@ -1225,9 +1225,9 @@ ul li {
 .form input[type=search].invalid,
 .form input[type=url].invalid,
 .form textarea.invalid {
-  -moz-box-shadow: 0 0 0 1px rgba(187, 16, 29, 0.4);
-  -webkit-box-shadow: 0 0 0 1px rgba(187, 16, 29, 0.4);
-  box-shadow: 0 0 0 1px rgba(187, 16, 29, 0.4);
+  -moz-box-shadow: 0 0 0 1px rgba(185, 74, 72, 0.4);
+  -webkit-box-shadow: 0 0 0 1px rgba(185, 74, 72, 0.4);
+  box-shadow: 0 0 0 1px rgba(185, 74, 72, 0.4);
 }
 .form input[type=text].required,
 .form input[type=password].required,
@@ -1239,7 +1239,7 @@ ul li {
 .form input[type=search].required,
 .form input[type=url].required,
 .form textarea.required {
-  border-right: 4px solid rgba(187, 16, 29, 0.4);
+  border-right: 4px solid rgba(185, 74, 72, 0.4);
 }
 .form .half-width:before,
 .form .half-width:after {
@@ -1804,4 +1804,59 @@ label.radio .pwn-radio {
 }
 .pwn-select:hover .pwn-select-arrow {
   background-color: #3cb2e3;
+}
+.pwn-tabs {
+  z-index: 0;
+}
+.pwn-tabs:before,
+.pwn-tabs:after {
+  content: " ";
+  display: table;
+}
+.pwn-tabs:after {
+  clear: both;
+}
+.pwn-tabs .tab {
+  z-index: 2;
+  float: left;
+  border: 1px solid #dedede;
+  background: #f5f5f5;
+  border-left-width: 0;
+  line-height: 2em;
+  padding: 0 24px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: moz-none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  cursor: pointer;
+}
+.pwn-tabs .tab:first-child {
+  border-left-width: 1px;
+}
+.pwn-tabs .tab:hover {
+  background-color: #ededed;
+}
+.pwn-tabs .tab.active {
+  color: #26a9e0;
+  background-color: #fff;
+  border-bottom-color: #fff;
+  cursor: default;
+}
+.pwn-tabs .tab.active:hover {
+  background-color: #fff;
+}
+.pwn-tabs .page {
+  z-index: 1;
+  display: none;
+  background-color: #fff;
+  min-height: 200px;
+  border: 1px solid #dedede;
+  margin-top: 33px;
+  padding: 20px;
+}
+.pwn-tabs .page.active {
+  display: block;
 }

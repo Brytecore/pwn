@@ -1,34 +1,57 @@
-// Used by body to determine the size of 1em.
-@base-font-size: 16px;
+// Brytecore colors
+@brytecore-blue: #26a9e0;
+@brytecore-red: #a6280b;
+@brytecore-red-orange: #ff4c21;
+@brytecore-light-orange: #ffc021;
 
+// Base colors
+@color-purple: #c8a5e0;
+@color-error-bg: #f2dede;
+@color-error-border: #daa2ab;
+@color-error-text: #b94a48;
+@color-danger: #ff343f;
+@color-warning-border: #e68845;
+@color-accent1: #e08926;
+@color-warning-bg: #ffeec9;
+@color-updated-border: #e6db55;
+@color-updated-bg: #fffdb1;
+@color-success-bg: #dff0d8;
+@color-success-border: #d6e9c6;
+@color-updated-text: #827d70;
+@color-warning-text: #827d70;
+@color-success-text: #468847;
+@color-information: @brytecore-blue;
+@color-focus: fade(@brytecore-blue, 30%);
+
+// Greys
+@color-background: #fff;
+@color-faint-background: #f5f5f5;
+@color-light-background: #ededed;
+@color-divider: #dedede;
+@color-text: #555;
+
+// Scaffolding
+@background: @color-background;
+
+// Text
+@base-font-size: 16px; // 1em for fonts
 @font-family: "lato", sans-serif;
 @font-size: 1em;
 @font-weight: 400;
 @line-height: 1.6em;
 @text-color: @color-text;
-@background: @color-background;
 
+// Headings
 @headings-font-family: "lato", sans-serif;
 @headings-font-weight: 700;
 @headings-text-color: @text-color;
 
-@brytecore-blue: #26a9e0;
-@color-information: @brytecore-blue;
-@color-focus: fade( @brytecore-blue, 30% );
+// Buttons
 @btn-primary: @brytecore-blue;
-@btn-primary-hover: fade( @btn-primary, 85% );
+@btn-primary-hover: fade(@btn-primary, 85%);
 @btn-primary-border: @btn-primary;
 @btn-primary-text: #fff;
 @btn-secondary: #fff;
 @btn-secondary-hover: #f4f4f4;
 @btn-secondary-border: #bFd5e0;
 @btn-secondary-text: @text-color;
-@color-accent1: #e08926;
-@color-warning: #fffdb1;
-@color-danger: #ff343f;
-@color-error: #bb101d;
-@color-text: #555;
-@color-background: #fff;
-@color-purple: #c8a5e0;
-@color-light-background: #ededed;
-
