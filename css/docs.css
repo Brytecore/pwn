@@ -223,3 +223,109 @@ body.docs-home {
 .nav-menu {
   text-transform: uppercase;
 }
+.browser-label {
+  text-align: center;
+  margin: 30px 0 0;
+}
+.browser-logos {
+  width: 300px;
+  height: 47px;
+  margin: 10px auto 2px;
+}
+.browser-logos:before,
+.browser-logos:after {
+  content: " ";
+  display: table;
+}
+.browser-logos:after {
+  clear: both;
+}
+.browser {
+  width: 45px;
+  height: 47px;
+  overflow: hidden;
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.browser.chrome > img {
+  margin-left: -90px;
+}
+.browser.ie > img {
+  margin-left: -45px;
+}
+.browser.firefox > img {
+  margin-left: -135px;
+}
+.browser > img {
+  height: 47px;
+  max-width: none;
+}
+.browser-names {
+  margin: 4px auto 20px;
+  width: 300px;
+}
+.browser-names:before,
+.browser-names:after {
+  content: " ";
+  display: table;
+}
+.browser-names:after {
+  clear: both;
+}
+.browser-name {
+  text-align: center;
+  font-size: .9em;
+  width: 75px;
+  float: left;
+}
+.browser-name .mobile {
+  margin-top: -2px;
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.browser-name .mobile img {
+  width: 36px;
+  height: 18px;
+  max-width: none;
+}
+.browser-name .mobile.android img {
+  margin-left: -18px;
+}
+.browser-name .mobile-os {
+  margin-top: 20px;
+}
+@media screen and (min-width: 568px) {
+  .browser-logos {
+    width: 456px;
+    height: 88px;
+    margin: 10px auto;
+  }
+  .browser {
+    width: 84px;
+    height: 88px;
+  }
+  .browser.chrome > img {
+    margin-left: -168px;
+  }
+  .browser.ie > img {
+    margin-left: -84px;
+  }
+  .browser.firefox > img {
+    margin-left: -252px;
+  }
+  .browser > img {
+    height: 88px;
+    max-width: none;
+  }
+  .browser-names {
+    width: 456px;
+    margin-top: 10px;
+  }
+  .browser-name {
+    width: 114px;
+  }
+}
