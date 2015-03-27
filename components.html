@@ -341,11 +341,19 @@
 					<tbody>
 						<tr>
 							<td>tabChanged</td>
-							<td>element, tabName</td>
+							<td>event, tabName</td>
 							<td>
-								Triggers when a user changes a tab. <code>tabName</code> is the
-								value of the <code>data-tab</code> attribute on the tab element.
+								<p>
+									Triggers when a user changes a tab. <code>event</code> is an object representing the
+									event that was triggered. Use <code>event.target</code> to get the DOM element that
+									triggered the event.
+								</p>
+								<p>
+									<code>tabName</code> is the value of the <code>data-tab</code> attribute on the tab
+									element.
+								</p>
 							</td>
+
 						</tr>
 					</tbody>
 				</table>
