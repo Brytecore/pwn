@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Get started using the Pwn CSS framework, a set of lightweight tools for creating responsive websites.">
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/Brytecore/pwn/master/dist/css/pwn.min.css">
+	<link rel="stylesheet" type="text/css" href="css/docs-libs.min.css">
+	<link rel="stylesheet" type="text/css" href="css/docs.min.css">
+	<title>Getting Started with the Pwn CSS Framework</title>
+</head>
+<body>
+	{% include nav.html slug="get-started" %}
+	<div class="docs-header">
+		<div class="container">
+			<div class="row">
+				<div class="pwn-xs-12">
+					<h1>Getting Started</h1>
+					<p>
+						How to download and include the Pwn framework in your website.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="pwn-xs-12">
+				<h2>Downloading the Framework</h2>
+				<p>
+					You can download the latest version of the framework, including the CSS, JavaScript and related
+					assets from the <a href="https://github.com/Brytecore/pwn/releases">Pwn repository releases</a>
+					page. Find the latest version and unzip the <code>pwn.zip</code> file into a directory on your website.
+				</p>
+				<h3>Using a CDN</h3>
+				<p>
+					Brytecore will host the framework on our Content Delivery Network (https://cdn.brytecore.com) once
+					the package versions stabilize. This will be the preferred method of hosting the files.
+				</p>
+				<h3>Using Pre-Release Versions</h3>
+				<p>
+					If you want to use unreleased features of the framework, you can download the latest development
+					release from the <a href="https://github.com/Brytecore/pwn">Pwn GitHub repository</a>. Download the
+					files in the <code>dist</code> directory and copy them to a directory on your server.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="pwn-xs-12">
+				<h2>Setting Up Your Page</h2>
+				<p>
+					Follow these instructions to get the Pwn framework running properly inside your HTML page.
+				</p>
+				<h3>Specify the HTML 5 doctype</h3>
+				<p>
+					In order for your page to properly respond to screen sizes, you must use HTML 5. This begins by
+					specifying the doctype as html. At the very top of your page, add the doctype above your
+					<code>html</code> tag:
+				</p>
+				<div class="syntax">
+<pre class="brush:html;gutter:false">
+&lt;!DOCTYPE html&gt;
+</pre>
+				</div>
+				<p>
+					Modify your <code>html</code> tag to include the language.
+				</p>
+				<div class="syntax">
+<pre class="brush:html;gutter:false">
+&lt;html lang="en"&gt;
+</pre>
+				</div>
+				<p>
+					Include the meta viewport tag at the top of your <code>head</code> section.
+				</p>
+				<div class="syntax">
+<pre class="brush:html;gutter:false">
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+</pre>
+				</div>
+				<h3>Include the Pwn CSS</h3>
+				<p>
+					Copy pwn.min.css into your website and add this <code>&lt;link&gt;</code> element to your page's
+					<code>&lt;head&gt;</code> section:
+				</p>
+				<div class="syntax">
+<pre class="brush: html;gutter: false;">
+&lt;link rel="stylesheet" type="text/css" href="/path-on-your-server/pwn.min.css"&gt;
+</pre>
+				</div>
+				<h3>Include the Pwn JavaScript</h3>
+				<p>
+					If you decide to use any of the <a href="components">Pwn JavaScript components</a>, you need to copy pwn.min.js into your
+					website and add a <code>&lt;script&gt;</code> tag at the end of your page, just before your
+					<code>&lt;/body&gt;</code> tag:
+				</p>
+				<p>
+					The Pwn JavaScript library requires jQuery. To put jQuery on your site, add a <code>&lt;script&gt;</code>
+					tag linking to the library, before the Pwn <code>script</code> link.
+				</p>
+				<div class="syntax">
+<pre class="brush: html;gutter: false;">
+&lt;script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="/path-on-your-server/pwn.min.js"&gt;&lt;/script&gt;
+</pre>
+				</div>
+				<h3>Other Meta Tags</h3>
+				<p>
+					We recommend you add <code>charset</code> and <code>http-equiv</code> tags for
+					maximum compatibility across devices and browsers.
+				</p>
+				<p>
+					The <code>IE=edge</code> statement tells Internet Explorer to use the latest rendering engine,
+					preventing compatibility mode issues.
+				</p>
+				<div class="syntax">
+<pre class="brush:html;gutter:false">
+&lt;meta charset="UTF-8"&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+</pre>
+				</div>
+				<h3>Putting It Together</h3>
+				<p>
+					The very top of your html page should look very similar to this snippet.
+				</p>
+				<div class="syntax">
+<pre class="brush:html;gutter:false">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+	&lt;link rel="stylesheet" type="text/css" href="/path-on-your-server/pwn.min.css"&gt;
+	&lt;title&gt;Your page title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+</pre>
+				</div>
+				<p>
+					The bottom of your page should look similar to this snippet.
+				</p>
+				<div class="syntax">
+<pre class="brush: html;gutter: false;">
+	&lt;script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript" src="/path-on-your-server/pwn.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% include footer.html %}
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/Brytecore/pwn/master/dist/js/pwn.min.js"></script>
+	<script type="text/javascript" src="js/docs-libs.min.js"></script>
+	<script type="text/javascript" src="js/pwn-docs.min.js"></script>
+</body>
+</html>

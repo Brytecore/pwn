@@ -1,8 +1,8 @@
 ---
 ---
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 	-->
 	<link rel="stylesheet" type="text/css" href="css/docs-libs.min.css">
 	<link rel="stylesheet" type="text/css" href="css/docs.min.css">
-	<title>Pwn components</title>
+	<title>Pwn JavaScript Components</title>
 </head>
 <body>
 	{% include nav.html slug="components" %}
@@ -22,7 +22,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="pwn-xs-12">
-					<h1>Javascript Components</h1>
+					<h1>JavaScript Components</h1>
 					<p>
 						Components to help manage your user interface actions and behaviors.
 					</p>
@@ -36,35 +36,15 @@
 			<div class="pwn-xs-12">
 				<h2>Installing components on your website</h2>
 				<p>
-					The Pwn Javascript library requires jQuery. To put jQuery on your site, add this <code>&lt;script&gt;</code>
-					to your page, before the Pwn javascript link.
+					Follow the directions on the <a href="get-started">Getting Started</a> page to download and
+					install the Pwn framework. You will need to include all CSS, JavaScript and asset files to properly
+					use the components shown on this page.
 				</p>
-<pre class="brush: html;gutter: false;">
-&lt;script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"&gt;&lt;/script&gt;
-</pre>
-				<p>
-					Copy pwn.min.js into your website and add a <code>&lt;script&gt;</code> tag at the end of your page, just
-					before your <code>&lt;/body&gt;</code> tag:
-				</p>
-<pre class="brush: html;gutter: false;">
-&lt;script type="text/javascript" src="/path-on-your-server/pwn.min.js"&gt;&lt;/script&gt;
-</pre>
-				<h3>Required Styles</h3>
-				<p>
-					The Pwn Javascript library requires some basic styles in order to function correctly. You can
-					simply include the Pwn stylesheets like a normal installation. Add this <code>&lt;link&gt;</code>
-					element to your page's <code>&lt;head&gt;</code> section:
-				</p>
-<pre class="brush: html;gutter: false;">
-&lt;link rel="stylesheet" type="text/css" href="/path-on-your-server/pwn.min.css"&gt;
-</pre>
 			</div>
 		</div>
 	</div>
-
 	<div class="container">
 		<a id="checkbox"></a>
-
 		<div class="row">
 			<div class="pwn-xs-12">
 				<h2>Checkbox</h2>
@@ -127,7 +107,7 @@
 			<div class="pwn-xs-12">
 				<h2>Select Box</h2>
 				<p>
-					Custom drop-down boxes that match the style of other pwn form elements. Simply insert a
+					Custom drop-down boxes that match the style of other Pwn form elements. Simply insert a
 					<code>&lt;select&gt;</code> element on your page and run <code>.pwn_select()</code> on the
 					jQuery selector for the element.
 				</p>

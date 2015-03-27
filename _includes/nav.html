@@ -9,6 +9,12 @@
 									<div class="logo"><img src="images/bc-logo.png"></div>
 								</a>
 							</li>
+							{% if include.slug == "get-started" %}
+							<li class="active">
+								{% else %}
+							<li>
+								{% endif %} <a href="/get-started">Getting Started</a>
+							</li>
 							{% if include.slug == "grid" %}
 							<li class="active">
 							{% else %}
