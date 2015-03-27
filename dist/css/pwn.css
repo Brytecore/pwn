@@ -1413,7 +1413,7 @@ span.caret-down:after {
   border-top: 4px solid #555555;
 }
 .pwn-notification {
-  padding: 2em;
+  padding: 1em 2em 2em;
   background-color: #e9f6fb;
   line-height: 1.5em;
 }
@@ -1769,6 +1769,9 @@ label.radio .pwn-radio {
   width: 270px;
   margin: 0;
   text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .pwn-select .pwn-select-value.not-selected {
   color: #999;
