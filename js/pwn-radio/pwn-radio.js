@@ -21,7 +21,7 @@
 				rd.addClass( "checked" );
 			}
 
-			if ( t.prop( "inverse" ) ) {
+			if ( t.hasClass( "inverse" ) ) {
 				rd.addClass( "inverse" );
 			}
 
