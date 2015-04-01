@@ -1695,6 +1695,15 @@ label.checkbox .pwn-checkbox {
   float: left;
   line-height: 20px;
 }
+label.checkbox.reverse {
+  float: right;
+}
+label.checkbox.reverse input[type=checkbox],
+label.checkbox.reverse .pwn-checkbox {
+  float: right;
+  margin-left: 8px;
+  margin-right: 0;
+}
 .pwn-checkbox {
   height: 20px;
   width: 20px;
@@ -1704,7 +1713,16 @@ label.checkbox .pwn-checkbox {
   cursor: pointer;
 }
 .pwn-checkbox.checked {
-  background-color: #26a9e0;
+  background: #ffffff url(../images/checkbox.png) no-repeat 2px 4px;
+  background-size: 14px 31px;
+}
+.pwn-checkbox.disabled {
+  background: #ffffff url(../images/checkbox.png) no-repeat 2px 4px;
+  background-size: 14px 31px;
+}
+.pwn-checkbox.inverse {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.4);
 }
 label.radio {
   line-height: 20px;
@@ -1715,6 +1733,15 @@ label.radio input[type=radio],
 label.radio .pwn-radio {
   float: left;
   line-height: 20px;
+}
+label.radio.reverse {
+  float: right;
+}
+label.radio.reverse input[type=radio],
+label.radio.reverse .pwn-radio {
+  float: right;
+  margin-left: 8px;
+  margin-right: 0;
 }
 .pwn-radio {
   height: 20px;
@@ -1728,7 +1755,16 @@ label.radio .pwn-radio {
   cursor: pointer;
 }
 .pwn-radio.checked {
-  background-color: #26a9e0;
+  background: #ffffff url(../images/checkbox.png) no-repeat 2px 4px;
+  background-size: 14px 31px;
+}
+.pwn-radio.disabled {
+  background: #ffffff url(../images/checkbox.png) no-repeat 2px 4px;
+  background-size: 14px 31px;
+}
+.pwn-radio.inverse {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.4);
 }
 .pwn-select-value {
   -webkit-border-radius: 0;
