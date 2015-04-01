@@ -21,6 +21,10 @@
 				rd.addClass( "checked" );
 			}
 
+			if ( t.prop( "inverse" ) ) {
+				rd.addClass( "inverse" );
+			}
+
 			var label = t.parent( 'label.radio' );
 
 			t.before( rd );

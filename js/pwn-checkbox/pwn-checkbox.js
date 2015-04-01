@@ -19,6 +19,10 @@
 				cb.addClass( "checked" );
 			}
 
+			if ( t.prop( "inverse" ) ) {
+				cb.addClass( "inverse" );
+			}
+
 			var label = t.parent( 'label.checkbox' );
 
 			t.before( cb );
