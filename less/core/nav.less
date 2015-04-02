@@ -1,6 +1,12 @@
 .nav-menu {
 
 	.menu {
+		z-index: 200;
+		margin: 0 -10px;
+
+		&.expanded ul li {
+			display: block;
+		}
 
 		ul {
 			list-style-type: none;
@@ -8,9 +14,13 @@
 			margin: 0;
 
 			li {
-				display: inline-block;
 				margin: 0;
 				padding: 0;
+				display: none;
+
+				&:last-child {
+					padding-bottom: 15px;
+				}
 
 				a, span {
 					display: block;
@@ -18,15 +28,23 @@
 					font-size: .9em;
 					line-height: 1.8em;
 					color: @text-color;
+					background-color: #fff;
 
-					a:hover {
-						text-decoration: underline;
+					&:hover {
+						background-color: @color-light-background;
+						text-decoration: none;
 					}
 				}
 
 				&.brand {
-					a {
-						padding: 0 .75em 0 0;
+					display: block;
+
+					a, span {
+						padding: 5px 10px;
+
+						&:hover {
+							background-color: transparent;
+						}
 					}
 
 					.logo {
@@ -43,25 +61,30 @@
 				&.active {
 					a {
 						background-color: @color-light-background;
+						color: @btn-primary;
 					}
 				}
 			}
 		}
+
+		.hamburger {
+			margin: 4px;
+			height: 30px;
+			width: 30px;
+			background: transparent url(../images/hamburger.png) 0 0 no-repeat;
+			background-size: 30px 120px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			cursor: pointer;
+		}
 	}
 
 	&.fixed {
-		position: fixed;
 		top: 0;
 		width: 100%;
 		z-index: 10;
 		background-color: #fff;
-	}
-
-	&.centered {
-
-		.menu ul {
-			text-align: center;
-		}
 	}
 
 	&.mini-nav {
@@ -117,4 +140,60 @@
 	.nav-menu {
 		position: absolute;
 	}
+}
+
+@media screen and ( min-width: @md-min-screen-width ) {
+
+	.nav-menu {
+		background-color: #fff;
+
+		&.fixed {
+			position: fixed;
+		}
+
+		.menu {
+			position: relative;
+
+			&.expanded ul li {
+				display: inline-block;
+			}
+
+			.hamburger {
+				display: none;
+			}
+
+			&.centered {
+				.menu ul {
+					text-align: center;
+				}
+			}
+
+			ul {
+				li {
+					display: inline-block;
+
+					&:last-child {
+						padding-bottom: 0;
+					}
+
+					&.brand {
+						display: inline-block;
+					}
+
+					a, span {
+						a:hover {
+							text-decoration: underline;
+						}
+					}
+
+					&.active {
+						a {
+							background-color: @color-light-background;
+						}
+					}
+				}
+			}
+		}
+	}
+
 }

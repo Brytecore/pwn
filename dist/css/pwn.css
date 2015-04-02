@@ -1088,15 +1088,25 @@ a:hover {
 ul li {
   line-height: 1.7em;
 }
+.nav-menu .menu {
+  z-index: 200;
+  margin: 0 -10px;
+}
+.nav-menu .menu.expanded ul li {
+  display: block;
+}
 .nav-menu .menu ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 .nav-menu .menu ul li {
-  display: inline-block;
   margin: 0;
   padding: 0;
+  display: none;
+}
+.nav-menu .menu ul li:last-child {
+  padding-bottom: 15px;
 }
 .nav-menu .menu ul li a,
 .nav-menu .menu ul li span {
@@ -1105,13 +1115,23 @@ ul li {
   font-size: .9em;
   line-height: 1.8em;
   color: #555555;
+  background-color: #fff;
 }
-.nav-menu .menu ul li a a:hover,
-.nav-menu .menu ul li span a:hover {
-  text-decoration: underline;
+.nav-menu .menu ul li a:hover,
+.nav-menu .menu ul li span:hover {
+  background-color: #ededed;
+  text-decoration: none;
 }
-.nav-menu .menu ul li.brand a {
-  padding: 0 .75em 0 0;
+.nav-menu .menu ul li.brand {
+  display: block;
+}
+.nav-menu .menu ul li.brand a,
+.nav-menu .menu ul li.brand span {
+  padding: 5px 10px;
+}
+.nav-menu .menu ul li.brand a:hover,
+.nav-menu .menu ul li.brand span:hover {
+  background-color: transparent;
 }
 .nav-menu .menu ul li.brand .logo {
   height: 28px;
@@ -1123,16 +1143,24 @@ ul li {
 }
 .nav-menu .menu ul li.active a {
   background-color: #ededed;
+  color: #26a9e0;
+}
+.nav-menu .menu .hamburger {
+  margin: 4px;
+  height: 30px;
+  width: 30px;
+  background: transparent url(../images/hamburger.png) 0 0 no-repeat;
+  background-size: 30px 120px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
 }
 .nav-menu.fixed {
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
   background-color: #fff;
-}
-.nav-menu.centered .menu ul {
-  text-align: center;
 }
 .nav-menu.mini-nav {
   position: fixed;
@@ -1180,6 +1208,42 @@ ul li {
 @media print {
   .nav-menu {
     position: absolute;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-menu {
+    background-color: #fff;
+  }
+  .nav-menu.fixed {
+    position: fixed;
+  }
+  .nav-menu .menu {
+    position: relative;
+  }
+  .nav-menu .menu.expanded ul li {
+    display: inline-block;
+  }
+  .nav-menu .menu .hamburger {
+    display: none;
+  }
+  .nav-menu .menu.centered .menu ul {
+    text-align: center;
+  }
+  .nav-menu .menu ul li {
+    display: inline-block;
+  }
+  .nav-menu .menu ul li:last-child {
+    padding-bottom: 0;
+  }
+  .nav-menu .menu ul li.brand {
+    display: inline-block;
+  }
+  .nav-menu .menu ul li a a:hover,
+  .nav-menu .menu ul li span a:hover {
+    text-decoration: underline;
+  }
+  .nav-menu .menu ul li.active a {
+    background-color: #ededed;
   }
 }
 .form {
