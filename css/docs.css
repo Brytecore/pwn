@@ -108,14 +108,11 @@ body.docs-home {
 .example .syntax .syntaxhighlighter.nogutter {
   margin-bottom: 1em !important;
 }
+.example .form {
+  margin-top: 0;
+}
 .example.headings table {
   margin: 0;
-}
-.example.headings table tr {
-  border-bottom: 1px dashed #eaeaea;
-}
-.example.headings table tr:last-child {
-  border-bottom: 0;
 }
 .example.headings table td {
   padding: 0;

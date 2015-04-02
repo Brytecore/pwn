@@ -7,9 +7,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Use the core styles included with the Pwn CSS framework to create attractive pages in minutes.">
-	<!--prod-->
+	<!--prod
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/Brytecore/pwn/master/dist/css/pwn.min.css">
-	<!--dev
+	<!--dev-->
 	<link rel="stylesheet" type="text/css" href="../pwn/dist/css/pwn.min.css">
 	-->
 	<link rel="stylesheet" type="text/css" href="css/docs-libs.min.css">
@@ -31,89 +31,286 @@
 		</div>
 	</div>
 	<div class="container">
-		<a id="typography"></a>
-		<h2>Typography</h2>
-		<h3>Paragraphs and Body Text</h3>
-		<p>
-			The base font used in Pwn is <code>lato</code>, an <a href="http://www.fontsquirrel.com/fonts/LATO">open
-			source font family</a>. The font adds about 82 KB to your page weight. In a future version, we will provide
-			downloadable libraries with and without the font.
-		</p>
-		<p>
-			Wrapping text in <code>&lt;p&gt;</code> tags ensure there is plenty of margin between
-			the sections of text, greatly improving readability. The default paragraph font size is 16px, weight is 300
-			(normal) and the line-height is 1.6em. Each paragraph has a .2em top and a 1.8em bottom margin.
-		</p>
-		<div class="example">
-			<p>
-				You know, I have one simple request. And that is to have sharks with frickin' laser beams attached to
-				their heads! Now evidently, my cycloptic colleague informs me that that can't be done. Can you remind me
-				what I pay you people for? Honestly, throw me a bone here. What do we have?
-			</p>
-			<div class="syntax">
+		<div class="row">
+			<div class="pwn-xs-12">
+				<a id="typography"></a>
+				<h2>Typography</h2>
+				<h3>Paragraphs and Body Text</h3>
+				<p>
+					The base font used in Pwn is <code>lato</code>, an <a href="http://www.fontsquirrel.com/fonts/LATO">open
+					source font family</a>. The font adds about 82 KB to your page weight. In a future version, we will provide
+					downloadable libraries with and without the font.
+				</p>
+				<p>
+					Wrapping text in <code>&lt;p&gt;</code> tags ensure there is plenty of margin between
+					the sections of text, greatly improving readability. The default paragraph font size is 16px, weight is 300
+					(normal) and the line-height is 1.6em. Each paragraph has a .2em top and a 1.8em bottom margin.
+				</p>
+				<div class="example">
+					<p>
+						You know, I have one simple request. And that is to have sharks with frickin' laser beams attached to
+						their heads! Now evidently, my cycloptic colleague informs me that that can't be done. Can you remind me
+						what I pay you people for? Honestly, throw me a bone here. What do we have?
+					</p>
+					<div class="syntax">
 <pre class="brush: javascript;html-script: true">
 &lt;p&gt;
 	&hellip;
 &lt;/p&gt;
 </pre>
-			</div>
-		</div>
-		<h3>Hyperlinks</h3>
-		<p>
-			Hyperlinks are the same font size as surrounding text, but colored
-			<span style="color:#27a9e0;">#27a9e0</span> with an underline hover style.
-		</p>
-		<div class="example">
-			<a href="http://en.wikipedia.org/wiki/Diablo_II">Stay awhile, and listen.</a>
-			<div class="syntax">
+					</div>
+				</div>
+				<h3>Hyperlinks</h3>
+				<p>
+					Hyperlinks are the same font size as surrounding text, but colored
+					<span style="color:#27a9e0;">#27a9e0</span> with an underline hover style.
+				</p>
+				<div class="example">
+					<a href="http://en.wikipedia.org/wiki/Diablo_II">Stay awhile, and listen.</a>
+					<div class="syntax">
 <pre class="brush:javascript;html-script:true;auto-links:false">
 &lt;a href="http://en.wikipedia.org/wiki/Diablo_II"&gt;Stay awhile, and listen.&lt;/a&gt;
 </pre>
-			</div>
-		</div>
-		<h3>Headings</h3>
-		<p>
-			Five heading levels are supported in Pwn. H1, H2, and H3 use a 20px top and a 10px bottom margin. H4 and H5 use
-			10px top and bottom margins.
-		</p>
-		<div class="example headings">
-			<table>
-				<tbody>
-					<tr>
-						<td>
-							<h1>Heading 1</h1>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<h2>Heading 2</h2>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<h3>Heading 3</h3>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<h4>Heading 4</h4>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<h5>Heading 5</h5>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			<div class="syntax">
+					</div>
+				</div>
+				<h3>Headings</h3>
+				<p>
+					Six heading levels are supported in Pwn. All headings use use a 20px top and a 10px bottom margin.
+				</p>
+				<div class="example headings">
+					<table>
+						<tbody>
+							<tr>
+								<td>
+									<h1>Heading 1</h1>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h2>Heading 2</h2>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h3>Heading 3</h3>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h4>Heading 4</h4>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h5>Heading 5</h5>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h6>Heading 6</h6>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="syntax">
 <pre class="brush: javascript;html-script: true">
 &lt;h1&gt;Heading 1&lt;/h1&gt;
 &lt;h2&gt;Heading 2&lt;/h2&gt;
 &lt;h3&gt;Heading 3&lt;/h3&gt;
 &lt;h4&gt;Heading 4&lt;/h4&gt;
 &lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
 </pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="pwn-xs-12">
+				<a id="forms"></a>
+				<h2>Forms</h2>
+				<p>
+					All form elements must be inside an element with the class <code>form</code>. This can be an actual
+					<code>&lt;form&gt;</code> element, or simply a <code>&lt;div&gt;</code>.
+				</p>
+				<div class="syntax">
+<pre class="brush: javascript;html-script: true">
+&lt;form class="form"&gt;
+	&lt;!-- Your form elements go here. --&gt;
+&lt;/form&gt;
+
+&lt;!-- You can also use elements other than &lt;form&gt; --&gt;
+&lt;div class="form"&gt;
+	&lt;!-- Your form elements go here. --&gt;
+&lt;/div&gt;
+</pre>
+				</div>
+
+				<h3>Text Box</h3>
+				<p>
+					Using the Pwn text box is as simple as using a normal HTML <code>&lt;input type="text"&gt;</code>
+					element. The <code>&lt;label&gt;</code> element is optional, but recommended. Add a
+					<code>placeholder</code> attribute to suggest a value or format to the user.
+				</p>
+				<div class="example">
+					<form class="form">
+						<label for="demo-text-1">Why did you disobey your program?</label>
+						<input id="demo-text-1" type="text" placeholder="Program say to kill, to disassemble, to make dead. Number 5 cannot.">
+					</form>
+
+					<div class="syntax">
+<pre class="brush: javascript;html-script: true">
+&lt;label for="ex-form-text-1"&gt;Why did you disobey your program?&lt;/label&gt;
+&lt;input id="ex-form-text-1" type="text" placeholder="..."&gt;
+</pre>
+					</div>
+				</div>
+
+				<h3>Textarea</h3>
+				<p>
+					Create a multi-line text box using the HTML <code>&lt;textarea&gt;</code> element. The
+					<code>&lt;label&gt;</code> element is optional, but recommended. Add a <code>placeholder</code>
+					attribute to suggest a value or format to the user.
+				</p>
+				<div class="example">
+					<form class="form">
+						<label for="demo-textarea-1">West of House</label>
+						<textarea id="demo-textarea-1" placeholder="You are standing in an open field west of a white house, with a boarded front door.
+
+There is a small mailbox here."></textarea>
+					</form>
+					<div class="syntax">
+<pre class="brush: javascript;html-script: true">
+&lt;label for="demo-textarea-1"&gt;West of House&lt;/label&gt;
+&lt;textarea id="demo-textarea-1" placeholder="..."&gt;&lt;/textarea&gt;
+</pre>
+					</div>
+				</div>
+
+				<h3>Dropdown Box</h3>
+				<p>
+					Pwn radio buttons replace normal <code>&lt;select&gt;</code> elements inside your form. The Pwn
+					JavaScript library is required for this form element. For full syntax and options, see the
+					<a href="/components#select">JavaScript Components</a> page.
+				</p>
+				<div class="example form">
+					<select id="select-demo">
+						<option>Is the glass...</option>
+						<!-- Optimist -->
+						<option>Half full</option>
+						<!-- Pessimist -->
+						<option>Half empty</option>
+						<!-- Realist -->
+						<option>Halfway to overflowing</option>
+						<!-- Engineer -->
+						<option>Twice as big as it needs to be</option>
+						<!-- Physicist -->
+						<option>Filled half with water, half with air</option>
+						<!-- Buddhist -->
+						<option>Already broken</option>
+						<!-- The Matrix -->
+						<option>There is no glass</option>
+					</select>
+
+					<div class="syntax">
+<pre class="brush: javascript;html-script: true">
+&lt;select id="select-demo"&gt;
+	&lt;option&gt;Is the glass...&lt;/option&gt;
+	&lt;option&gt;Half full&lt;/option&gt;
+	&lt;option&gt;Half empty&lt;/option&gt;
+	&hellip;
+&lt;/select&gt;
+
+&lt;script type="text/javascript"&gt;
+	$( "#select-demo" ).pwn_select();
+&lt;/script&gt;
+</pre>
+					</div>
+				</div>
+
+				<h3>Checkbox</h3>
+				<p>
+					Pwn checkboxes replace normal <code>&lt;input type="checkbox"&gt;</code> elements inside your
+					form. The Pwn JavaScript library is required for this form element. For full syntax and options, see
+					the <a href="/components#checkbox">JavaScript Components</a> page.
+				</p>
+				<div class="example form">
+					<label for="checkbox-demo" class="checkbox">
+						<input type="checkbox" id="checkbox-demo"> Yes, I'd like to check out this free download
+					</label>
+					<div class="syntax">
+<pre class="brush: javascript;html-script: true">
+&lt;label for="checkbox-demo" class="checkbox"&gt;
+	&lt;input type="checkbox" id="checkbox-demo"&gt; Yes, I'd like to check out this free download
+&lt;/label&gt;
+
+&lt;script type="text/javascript"&gt;
+	$( "label.checkbox input" ).pwn_checkbox();
+&lt;/script&gt;
+</pre>
+					</div>
+				</div>
+
+				<h3>Radio Button</h3>
+				<p>
+					Pwn radio buttons replace normal <code>&lt;input type="radio"&gt;</code> elements inside your
+					form. The Pwn JavaScript library is required for this form element. For full syntax and options, see
+					the <a href="/components#radio">JavaScript Components</a> page.
+				</p>
+				<div class="example form">
+					<label class="radio"><input type="radio" name="radio-demo" value="this"> Die a hero</label>
+					<label class="radio"><input type="radio" name="radio-demo" value="that"> Live long enough to see
+						yourself become the villain</label>
+
+					<div class="syntax">
+<pre class="brush: javascript;html-script: true">
+&lt;label class="radio"&gt;&lt;input type="radio" name="radio-demo" value="this"> Die a hero&lt;/label&gt;
+&lt;label class="radio"&gt;&lt;input type="radio" name="radio-demo" value="that"> Live long enough&hellip;&lt;/label&gt;
+
+&lt;script type="text/javascript"&gt;
+	$( "label.radio input" ).pwn_radio();
+&lt;/script&gt;
+</pre>
+					</div>
+				</div>
+
+				<h3>Buttons</h3>
+				<p>
+					Buttons are designed to be placed in many different locations throughout your site, not just
+					inside forms. Thus, buttons are not required to be inside <code>&lt;form&gt;</code> tags to style
+					properly.
+				</p>
+				<p>
+					All buttons have the <code>btn</code> class. You can add secondary classes to style the button for
+					your situation. Buttons can be <code>a</code>, <code>div</code>, <code>button</code>,
+					<code>input type="submit"</code>, or <code>span</code>.
+				</p>
+				<div class="example">
+					<h6>Normal Buttons</h6>
+					<a class="btn">Default</a>
+					<span class="btn secondary">Secondary</span>
+					<button class="btn delete">Delete</button>
+					<h6>Small Buttons</h6>
+					<input type="submit" class="btn small" value="Default">
+					<a class="btn secondary small">Secondary</a>
+					<div class="btn delete small">Delete</div>
+					<div class="syntax">
+<pre class="brush: javascript;html-script: true">
+&lt;h6&gt;Normal Buttons&lt;/h6&gt;
+&lt;a class="btn"&gt;Default&lt;/a&gt;
+&lt;span class="btn secondary"&gt;Secondary&lt;/span&gt;
+&lt;button class="btn delete"&gt;Delete&lt;/button&gt;
+
+&lt;h6&gt;Small Buttons&lt;/h6&gt;
+&lt;input type="submit" class="btn small" value="Default"&gt;
+&lt;a class="btn secondary small"&gt;Secondary&lt;/a&gt;
+&lt;div class="btn delete small"&gt;Delete&lt;/div&gt;
+</pre>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -124,5 +321,19 @@
 	<script type="text/javascript" src="https://rawgit.com/Brytecore/pwn/master/dist/js/pwn.min.js"></script>
 	<script type="text/javascript" src="js/docs-libs.min.js"></script>
 	<script type="text/javascript" src="js/pwn-docs.min.js"></script>
+	<script type="text/javascript">
+		(function ( $, undefined ) {
+			function run_demos() {
+				$( "#checkbox-demo" ).pwn_checkbox();
+				$( "label.radio input" ).pwn_radio();
+				$( "#select-demo" ).pwn_select();
+				$( ".pwn-tabs" ).pwn_tabs();
+			}
+
+			$( function () {
+				run_demos();
+			} );
+		}( jQuery ) );
+	</script>
 </body>
 </html>
