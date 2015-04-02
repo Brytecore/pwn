@@ -4,6 +4,12 @@ body {
 body.docs-home {
   padding-top: 0;
 }
+a.bookmark {
+  content: "";
+  display: block;
+  height: 39px;
+  margin: -39px 0 0;
+}
 .docs-hero {
   background: #efefef;
   padding: 60px 0;
