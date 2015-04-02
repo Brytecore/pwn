@@ -15,11 +15,6 @@
 @syntax-zebra-stripe: #f8f8f8;
 
 body {
-	padding-top: 39px;
-
-	&.docs-home {
-		padding-top: 0;
-	}
 }
 
 a.bookmark {
@@ -260,3 +255,13 @@ a.bookmark {
 		width: 114px;
 	}
 });
+
+@media screen and ( min-width: @md-min-screen-width ) {
+	body {
+		padding-top: 39px;
+
+		&.docs-home {
+			padding-top: 0;
+		}
+	}
+}

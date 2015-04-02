@@ -1,9 +1,3 @@
-body {
-  padding-top: 39px;
-}
-body.docs-home {
-  padding-top: 0;
-}
 a.bookmark {
   content: "";
   display: block;
@@ -330,5 +324,13 @@ a.bookmark {
   }
   .browser-name {
     width: 114px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 39px;
+  }
+  body.docs-home {
+    padding-top: 0;
   }
 }
