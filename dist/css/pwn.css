@@ -607,9 +607,6 @@ th {
   }
 }
 @media screen and (min-width: 568px) {
-  .container {
-    width: 538px;
-  }
   .pwn-sm-12 {
     width: 100%;
   }
@@ -1404,6 +1401,15 @@ ul li {
 .btn.delete:hover {
   text-decoration: none;
   background-color: rgba(166, 40, 11, 0.85);
+}
+.btn.trans {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+.btn.trans:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .btn.small {
   padding: 0 10px;
