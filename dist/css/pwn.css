@@ -1404,11 +1404,19 @@ ul li {
 }
 .btn.trans {
   background-color: transparent;
-  color: #fff;
-  border-color: #fff;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 .btn.trans:hover {
   text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.btn.trans.inverse {
+  background-color: transparent;
+  color: #555555;
+  border-color: #555555;
+}
+.btn.trans.inverse:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .btn.small {

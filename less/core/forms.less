@@ -133,13 +133,23 @@
 }
 
 .btn.trans {
-	background-color: transparent;
-	color: #fff;
-	border-color: #fff;
+	background-color: @btn-trans;
+	color: @btn-trans-text;
+	border-color: @btn-trans-border;
 
 	&:hover {
 		text-decoration: none;
-		background-color: rgba( 255, 255, 255, 0.1 );
+		background-color: @btn-trans-hover;
+	}
+
+	&.inverse {
+		background-color: @btn-trans;
+		color: @btn-trans-inverse-text;
+		border-color: @btn-trans-inverse-border;
+
+		&:hover {
+			background-color: @btn-trans-inverse-hover;
+		}
 	}
 }
 
