@@ -41,7 +41,7 @@ a.bookmark {
   padding: 0 1.5em;
 }
 .docs-header {
-  background-color: #27a9e0;
+  background: #27a9e0;
 }
 .docs-header h1 {
   color: #ffffff;
@@ -296,6 +296,10 @@ a.bookmark {
   margin-top: 20px;
 }
 @media screen and (min-width: 568px) {
+  .docs-header {
+    background: #27a9e0 url(../images/cubes.png) no-repeat 100% 0;
+    background-size: auto 110%;
+  }
   .browser-logos {
     width: 456px;
     height: 88px;
@@ -332,5 +336,9 @@ a.bookmark {
   }
   body.docs-home {
     padding-top: 0;
+  }
+  .docs-header {
+    background: #27a9e0 url(../images/cubes.png) no-repeat 100% 0;
+    background-size: auto 150%;
   }
 }

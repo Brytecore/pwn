@@ -74,7 +74,7 @@ a.bookmark {
 }
 
 .docs-header {
-	background-color: @color-header;
+	background: @color-header;
 
 	h1 {
 		color: @color-header-h1;
@@ -212,6 +212,11 @@ a.bookmark {
 }
 
 .sm({
+	.docs-header {
+		background: @color-header url(../images/cubes.png) no-repeat 100% 0;
+		background-size: auto 110%;
+	}
+
 	.browser-logos {
 		width: 456px;
 		height: 88px;
@@ -263,5 +268,10 @@ a.bookmark {
 		&.docs-home {
 			padding-top: 0;
 		}
+	}
+
+	.docs-header {
+		background: @color-header url(../images/cubes.png) no-repeat 100% 0;
+		background-size: auto 150%;
 	}
 }
