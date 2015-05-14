@@ -606,7 +606,7 @@ th {
     width: 8.33333333%;
   }
 }
-@media screen and (min-width: 568px) {
+@media (min-width: 568px) {
   .pwn-sm-12 {
     width: 100%;
   }
@@ -644,7 +644,7 @@ th {
     width: 8.33333333%;
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .container {
     width: 728px;
     padding-left: 15px;
@@ -758,7 +758,7 @@ th {
     width: 8.33333333%;
   }
 }
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .container {
     width: 984px;
     padding-left: 20px;
@@ -872,7 +872,7 @@ th {
     width: 8.33333333%;
   }
 }
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .container {
     width: 1240px;
   }
@@ -913,27 +913,27 @@ th {
     width: 8.33333333%;
   }
 }
-@media screen and (min-width: 200px) and (max-width: 568px - 1) {
+@media (min-width: 200px) and (max-width: 568px - 1) {
   .hidden-xs {
     display: none !important;
   }
 }
-@media screen and (min-width: 568px) and (max-width: 768px - 1) {
+@media (min-width: 568px) and (max-width: 768px - 1) {
   .hidden-sm {
     display: none !important;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px - 1) {
+@media (min-width: 768px) and (max-width: 1024px - 1) {
   .hidden-md {
     display: none !important;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1280px - 1) {
+@media (min-width: 1024px) and (max-width: 1280px - 1) {
   .hidden-lg {
     display: none !important;
   }
 }
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .hidden-xl {
     display: none !important;
   }
@@ -1183,12 +1183,12 @@ ul li {
 .nav-menu.mini-nav .menu ul li a a:hover {
   text-decoration: underline;
 }
-@media screen and (min-width: 200px) {
+@media (min-width: 200px) {
   .nav-menu.mini-nav .menu {
     display: none;
   }
 }
-@media screen and (min-width: 568px) {
+@media (min-width: 568px) {
   .nav-menu.mini-nav .menu {
     display: block;
   }
@@ -1207,7 +1207,7 @@ ul li {
     position: absolute;
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .nav-menu {
     background-color: #fff;
   }
@@ -2059,7 +2059,7 @@ label.radio.reverse .pwn-radio {
   display: block;
   border-top-width: 0;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .pwn-tabs .tabs {
     display: block;
   }

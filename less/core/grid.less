@@ -141,12 +141,12 @@ body {
 }
 
 // -xs- ( 200px - 567px )
-@media screen and ( min-width: @xs-min-screen-width ) {
+@media ( min-width: @xs-min-screen-width ) {
 	// xs is default and shouldn't need any styles. Here for documentation purposes.
 }
 
 // -sm- ( 568px - 767px )
-@media screen and ( min-width: @sm-min-screen-width ) {
+@media ( min-width: @sm-min-screen-width ) {
 
 	.container {
 		//width: @sm-container;
@@ -202,7 +202,7 @@ body {
 }
 
 // -md- ( 768px - 1023px )
-@media screen and ( min-width: @md-min-screen-width ) {
+@media ( min-width: @md-min-screen-width ) {
 
 	.container {
 		width: @md-container;
@@ -280,7 +280,7 @@ body {
 }
 
 // -lg- ( 1024px - 1279px )
-@media screen and ( min-width: @lg-min-screen-width ) {
+@media ( min-width: @lg-min-screen-width ) {
 	.container {
 		width: @lg-container;
 		padding-left: @lg-padding;
@@ -357,7 +357,7 @@ body {
 }
 
 // -xl- ( 1280px )
-@media screen and ( min-width: @xl-min-screen-width ) {
+@media ( min-width: @xl-min-screen-width ) {
 	.container {
 		width: @xl-container;
 	}
@@ -411,31 +411,31 @@ body {
 	}
 }
 
-@media screen and ( min-width: @xs-min-screen-width ) and ( max-width: @sm-min-screen-width - 1 ) {
+@media ( min-width: @xs-min-screen-width ) and ( max-width: @sm-min-screen-width - 1 ) {
 	.hidden-xs {
 		display: none !important;
 	}
 }
 
-@media screen and ( min-width: @sm-min-screen-width )and ( max-width: @md-min-screen-width - 1 ) {
+@media ( min-width: @sm-min-screen-width )and ( max-width: @md-min-screen-width - 1 ) {
 	.hidden-sm {
 		display: none !important;
 	}
 }
 
-@media screen and ( min-width: @md-min-screen-width ) and ( max-width: @lg-min-screen-width - 1 ) {
+@media ( min-width: @md-min-screen-width ) and ( max-width: @lg-min-screen-width - 1 ) {
 	.hidden-md {
 		display: none !important;
 	}
 }
 
-@media screen and ( min-width: @lg-min-screen-width ) and ( max-width: @xl-min-screen-width - 1 ) {
+@media ( min-width: @lg-min-screen-width ) and ( max-width: @xl-min-screen-width - 1 ) {
 	.hidden-lg {
 		display: none !important;
 	}
 }
 
-@media screen and ( min-width: @xl-min-screen-width ) {
+@media ( min-width: @xl-min-screen-width ) {
 	.hidden-xl {
 		display: none !important;
 	}
