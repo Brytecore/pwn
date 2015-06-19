@@ -1,4 +1,4 @@
-/*! Pwn CSS framework v0.0.2 - http://www.pwncss.com
+/*! Pwn CSS framework v0.0.3 - http://www.pwncss.com
  *  Copyright 2015 Brytecore, LLC
  *  Licensed under MIT - https://github.com/Brytecore/pwn/blob/master/LICENSE
  */
@@ -606,6 +606,23 @@ th {
     width: 8.33333333%;
   }
 }
+.pwn-break-xs {
+  display: block;
+}
+.pwn-break-xs:before,
+.pwn-break-xs:after {
+  content: " ";
+  display: table;
+}
+.pwn-break-xs:after {
+  clear: both;
+}
+.pwn-break-sm,
+.pwn-break-md,
+.pwn-break-lg,
+.pwn-break-xl {
+  display: none;
+}
 @media (min-width: 568px) {
   .pwn-sm-12 {
     width: 100%;
@@ -643,6 +660,17 @@ th {
   .pwn-sm-1 {
     width: 8.33333333%;
   }
+}
+.pwn-break-xs {
+  display: block;
+}
+.pwn-break-xs:before,
+.pwn-break-xs:after {
+  content: " ";
+  display: table;
+}
+.pwn-break-xs:after {
+  clear: both;
 }
 @media (min-width: 768px) {
   .container {

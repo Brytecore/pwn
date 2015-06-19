@@ -140,6 +140,15 @@ body {
 	}
 }
 
+.pwn-break-xs {
+	display: block;
+	.clearfix();
+}
+
+.pwn-break-sm, .pwn-break-md, .pwn-break-lg, .pwn-break-xl {
+	display: none;
+}
+
 // -xs- ( 200px - 567px )
 @media ( min-width: @xs-min-screen-width ) {
 	// xs is default and shouldn't need any styles. Here for documentation purposes.
@@ -199,6 +208,12 @@ body {
 	.pwn-sm-1 {
 		width: 100% * 1/12;
 	}
+}
+
+
+.pwn-break-xs {
+	display: block;
+	.clearfix();
 }
 
 // -md- ( 768px - 1023px )
