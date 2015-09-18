@@ -393,6 +393,9 @@ th {
 .container:after {
   clear: both;
 }
+.container.full {
+  width: 100%;
+}
 .container .row {
   margin-left: -10px;
   margin-right: -10px;
@@ -624,6 +627,9 @@ th {
   display: none;
 }
 @media (min-width: 568px) {
+  .container.full {
+    width: 100%;
+  }
   .pwn-sm-12 {
     width: 100%;
   }
@@ -677,6 +683,9 @@ th {
     width: 728px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .container.full {
+    width: 100%;
   }
   .container .row {
     margin-left: -15px;
@@ -792,6 +801,9 @@ th {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .container.full {
+    width: 100%;
+  }
   .container .row {
     margin-left: -20px;
     margin-right: -20px;
@@ -903,6 +915,9 @@ th {
 @media (min-width: 1280px) {
   .container {
     width: 1240px;
+  }
+  .full {
+    width: 100%;
   }
   .pwn-xl-12 {
     width: 100%;

@@ -13,6 +13,10 @@ body {
 	padding-right: @xs-padding;
 	.clearfix();
 
+	&.full {
+		width: 100%;
+	}
+
 	.row {
 		margin-left: -@xs-padding;
 		margin-right: -@xs-padding;
@@ -158,7 +162,9 @@ body {
 @media ( min-width: @sm-min-screen-width ) {
 
 	.container {
-		//width: @sm-container;
+		&.full {
+			width: 100%;
+		}
 	}
 
 	.pwn-sm-12 {
@@ -223,6 +229,10 @@ body {
 		width: @md-container;
 		padding-left: @md-padding;
 		padding-right: @md-padding;
+
+		&.full {
+			width: 100%;
+		}
 
 		.row {
 			margin-left: -@md-padding;
@@ -301,6 +311,10 @@ body {
 		padding-left: @lg-padding;
 		padding-right: @lg-padding;
 
+		&.full {
+			width: 100%;
+		}
+
 		.row {
 			margin-left: -@lg-padding;
 			margin-right: -@lg-padding;
@@ -375,6 +389,10 @@ body {
 @media ( min-width: @xl-min-screen-width ) {
 	.container {
 		width: @xl-container;
+	}
+
+	&.full {
+		width: 100%;
 	}
 
 	.pwn-xl-12 {
