@@ -31,4 +31,4 @@ top. If you want to use the latest development branch, copy all items in the
 The Pwn framework is released under the [MIT License](https://github.com/Brytecore/pwn/blob/master/LICENSE), and the 
 documentation under [Creative Commons Attribution 3.0](https://github.com/Brytecore/pwn/blob/gh-pages/LICENSE).
 
-Copyright 2015, [Brytecore, LLC](http://brytecore.com)
+Copyright 2016, [Brytecore, LLC](http://brytecore.com)
