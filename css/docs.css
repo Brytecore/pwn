@@ -295,6 +295,10 @@ a.bookmark {
 .browser-name .mobile-os {
   margin-top: 20px;
 }
+.centered-image {
+  display: block;
+  margin: 0 auto;
+}
 @media screen and (min-width: 568px) {
   .docs-header {
     background: #27a9e0 url(../images/cubes.png) no-repeat 100% 0;
