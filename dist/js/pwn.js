@@ -1,4 +1,4 @@
-/*! Pwn JavaScript library v0.0.3 - http://www.pwncss.com
+/*! Pwn JavaScript library v0.0.4 - http://www.pwncss.com
  *  Copyright 2015 Brytecore, LLC
  *  Licensed under MIT - https://github.com/Brytecore/pwn/blob/master/LICENSE
  */
