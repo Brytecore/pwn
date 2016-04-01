@@ -1,5 +1,5 @@
 /*! Pwn JavaScript library v0.0.4 - http://www.pwncss.com
- *  Copyright 2015 Brytecore, LLC
+ *  Copyright 2016 Brytecore, LLC
  *  Licensed under MIT - https://github.com/Brytecore/pwn/blob/master/LICENSE
  */
 /* Pwn INPUT TYPE=CHECKBOX replacement. */

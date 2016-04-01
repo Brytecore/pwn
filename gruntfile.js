@@ -8,7 +8,7 @@ module.exports = function( grunt ) {
 				options: {
 					banner:
 						"/*! Pwn JavaScript library v<%= pkg.version %> - http://www.pwncss.com\n" +
-						" *  Copyright 2015 Brytecore, LLC\n" +
+						" *  Copyright 2016 Brytecore, LLC\n" +
 						" *  Licensed under MIT - https://github.com/Brytecore/pwn/blob/master/LICENSE\n" +
 						" */\n"
 				},
@@ -30,7 +30,7 @@ module.exports = function( grunt ) {
 			options: {
 				banner:
 					"/*! Pwn CSS framework v<%= pkg.version %> - http://www.pwncss.com\n" +
-					" *  Copyright 2015 Brytecore, LLC\n" +
+					" *  Copyright 2016 Brytecore, LLC\n" +
 					" *  Licensed under MIT - https://github.com/Brytecore/pwn/blob/master/LICENSE\n" +
 					" */\n"
 			},
