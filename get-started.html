@@ -20,7 +20,7 @@
 				<div class="pwn-xs-12">
 					<h1>Getting Started</h1>
 					<p>
-						How to download and include the Pwn framework in your website.
+						How to include the Pwn framework in your website.
 					</p>
 				</div>
 			</div>
@@ -30,22 +30,26 @@
 		<a id="download" class="bookmark"></a>
 		<div class="row">
 			<div class="pwn-xs-12">
-				<h2>Downloading the Framework</h2>
+				<h2>Where to Find the Pwn Framework</h2>
 				<p>
-					You can download the latest version of the framework, including the CSS, JavaScript and related
-					assets from the <a href="https://github.com/Brytecore/pwn/releases">Pwn repository releases</a>
-					page. Find the latest version and unzip the <code>pwn.zip</code> file into a directory on your website.
+					You can reference the Pwn files from the Brytecore CDN at the following URLs:
 				</p>
-				<h3>Using a CDN</h3>
-				<p>
-					Brytecore will host the framework on our Content Delivery Network (https://cdn.brytecore.com) once
-					the package versions stabilize. This will be the preferred method of hosting the files.
-				</p>
+				<ul>
+					<li>Pwn Styles: https://cdn.brytecore.com/pwn/css/pwn.min.css</li>
+					<li>Pwn JavaScript: https://cdn.brytecore.com/pwn/js/pwn.min.js</li>
+				</ul>
 				<h3>Using Pre-Release Versions</h3>
 				<p>
 					If you want to use unreleased features of the framework, you can download the latest development
 					release from the <a href="https://github.com/Brytecore/pwn">Pwn GitHub repository</a>. Download the
 					files in the <code>dist</code> directory and copy them to a directory on your server.
+				</p>
+				<h3>Downloading the Framework</h3>
+				<p>
+					You can download the latest version of the framework, including the CSS, JavaScript and related
+					assets from the <a href="https://github.com/Brytecore/pwn/releases">Pwn repository releases</a>
+					page. Find the latest version and unzip the <code>pwn.zip</code> file into a directory on your
+					website.
 				</p>
 			</div>
 		</div>
@@ -87,19 +91,19 @@
 				</div>
 				<h3>Include the Pwn CSS</h3>
 				<p>
-					Copy pwn.min.css into your website and add this <code>&lt;link&gt;</code> element to your page's
+					Paste this <code>&lt;link&gt;</code> element to your page's
 					<code>&lt;head&gt;</code> section:
 				</p>
 				<div class="syntax">
 <pre class="brush: html;gutter: false;">
-&lt;link rel="stylesheet" type="text/css" href="/path-on-your-server/pwn.min.css"&gt;
+&lt;link rel="stylesheet" type="text/css" href="//cdn.brytecore.com/pwn/css/pwn.min.css"&gt;
 </pre>
 				</div>
 				<h3>Include the Pwn JavaScript</h3>
 				<p>
-					If you decide to use any of the <a href="components">Pwn JavaScript components</a>, you need to copy pwn.min.js into your
-					website and add a <code>&lt;script&gt;</code> tag at the end of your page, just before your
-					<code>&lt;/body&gt;</code> tag:
+					If you decide to use any of the <a href="components">Pwn JavaScript components</a>, you need to
+					add a <code>&lt;script&gt;</code> tag at the end of your page, just before your
+					<code>&lt;/body&gt;</code> tag.
 				</p>
 				<p>
 					The Pwn JavaScript library requires jQuery. To put jQuery on your site, add a <code>&lt;script&gt;</code>
@@ -108,7 +112,7 @@
 				<div class="syntax">
 <pre class="brush: html;gutter: false;">
 &lt;script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="/path-on-your-server/pwn.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.brytecore.com/pwn/js/pwn.min.js"&gt;&lt;/script&gt;
 </pre>
 				</div>
 				<h3>Other Meta Tags</h3>
@@ -139,7 +143,7 @@
 	&lt;meta charset="UTF-8"&gt;
 	&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
 	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-	&lt;link rel="stylesheet" type="text/css" href="/path-on-your-server/pwn.min.css"&gt;
+	&lt;link rel="stylesheet" type="text/css" href="//cdn.brytecore.com/pwn/css/pwn.min.css"&gt;
 	&lt;title&gt;Your page title&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
@@ -151,7 +155,7 @@
 				<div class="syntax">
 <pre class="brush: html;gutter: false;">
 	&lt;script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"&gt;&lt;/script&gt;
-	&lt;script type="text/javascript" src="/path-on-your-server/pwn.min.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript" src="//cdn.brytecore.com/pwn/js/pwn.min.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>

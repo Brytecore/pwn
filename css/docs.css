@@ -44,12 +44,12 @@ a.bookmark {
   background: #27a9e0;
 }
 .docs-header h1 {
-  color: #ffffff;
+  color: #fff;
   font-weight: 400;
   margin-bottom: 0;
 }
 .docs-header p {
-  color: #ffffff;
+  color: #fff;
   font-size: 1.4em;
   margin-bottom: 1.5em;
 }
@@ -63,7 +63,7 @@ a.bookmark {
   border-top: 1px solid #eaeaea;
 }
 .docs-footer p {
-  color: #bbbbbb;
+  color: #bbb;
 }
 .docs-footer .row:nth-child(2) {
   padding: 2em 0 3em;
