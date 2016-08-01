@@ -625,8 +625,6 @@ th {
 .pwn-break-xl {
   display: none;
 }
-@media (min-width: 200px) {
-}
 @media (min-width: 568px) {
   .container.full {
     width: 100%;
@@ -994,11 +992,11 @@ th {
   box-sizing: border-box;
 }
 body {
-  background: #fff;
+  background: #ffffff;
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #555;
+  color: #555555;
   -webkit-font-smoothing: antialiased;
 }
 h1,
@@ -1009,7 +1007,7 @@ h5,
 h6 {
   font-family: sans-serif;
   font-weight: 700;
-  color: #555;
+  color: #555555;
 }
 h1,
 h2,
@@ -1051,7 +1049,7 @@ img {
 }
 figure figcaption.attribution,
 figure figcaption.attribution a {
-  color: #aaa;
+  color: #aaaaaa;
   font-size: .8em;
   text-align: center;
   padding-top: 3px;
@@ -1099,7 +1097,7 @@ ul li {
   padding: .5em .75em;
   font-size: .9em;
   line-height: 1.8em;
-  color: #555;
+  color: #555555;
   background-color: #fff;
 }
 .nav-menu .menu ul li a:hover,
@@ -1364,7 +1362,7 @@ ul li {
   line-height: 2.5em;
   display: inline-block;
   background-color: #26a9e0;
-  color: #fff;
+  color: #ffffff;
   border: 1px solid #26a9e0;
   cursor: pointer;
 }
@@ -1373,9 +1371,9 @@ ul li {
   background-color: rgba(38, 169, 224, 0.85);
 }
 .btn.secondary {
-  background-color: #fff;
-  color: #555;
-  border-color: #bFd5e0;
+  background-color: #ffffff;
+  color: #555555;
+  border-color: #bfd5e0;
 }
 .btn.secondary:hover {
   text-decoration: none;
@@ -1383,7 +1381,7 @@ ul li {
 }
 .btn.delete {
   background-color: #a6280b;
-  color: #fff;
+  color: #ffffff;
   border-color: #a6280b;
 }
 .btn.delete:hover {
@@ -1392,8 +1390,8 @@ ul li {
 }
 .btn.trans {
   background-color: transparent;
-  color: #555;
-  border-color: #555;
+  color: #555555;
+  border-color: #555555;
 }
 .btn.trans:hover {
   text-decoration: none;
@@ -1401,8 +1399,8 @@ ul li {
 }
 .btn.trans.inverse {
   background-color: transparent;
-  color: #fff;
-  border-color: #fff;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 .btn.trans.inverse:hover {
   background-color: rgba(255, 255, 255, 0.1);
@@ -1489,10 +1487,10 @@ span.caret-down:after {
   border-right: 4px solid transparent;
 }
 span.caret-up:after {
-  border-bottom: 4px solid #555;
+  border-bottom: 4px solid #555555;
 }
 span.caret-down:after {
-  border-top: 4px solid #555;
+  border-top: 4px solid #555555;
 }
 .pwn-notification {
   padding: 1em 2em 2em;
@@ -1518,7 +1516,7 @@ span.caret-down:after {
   font-size: 12px;
   font-weight: bold;
   cursor: pointer;
-  color: #555;
+  color: #555555;
   position: relative;
   z-index: 2;
 }
@@ -1526,7 +1524,7 @@ span.caret-down:after {
   position: absolute;
   z-index: 1;
   border: 1px solid #cfcfcf;
-  background: #fff;
+  background: #ffffff;
   width: 428px;
   padding: 5px 12px;
   font-size: 12px;
@@ -1573,7 +1571,7 @@ span.caret-down:after {
 .date-picker-wrapper .month-wrapper table th,
 .date-picker-wrapper .month-wrapper table td {
   background-color: #fff;
-  color: #555;
+  color: #555555;
   vertical-align: middle;
   text-align: center;
   line-height: 14px;
@@ -1605,7 +1603,7 @@ span.caret-down:after {
   cursor: help !important;
 }
 .date-picker-wrapper .month-wrapper table .day.toMonth.valid {
-  color: #555;
+  color: #555555;
   cursor: pointer;
 }
 .date-picker-wrapper .month-wrapper table .day.real-today {
@@ -1795,11 +1793,11 @@ label.checkbox.reverse .pwn-checkbox {
   cursor: pointer;
 }
 .pwn-checkbox.checked {
-  background: #fff url(../images/checkbox.png) no-repeat 2px 4px;
+  background: #ffffff url(../images/checkbox.png) no-repeat 2px 4px;
   background-size: 14px 31px;
 }
 .pwn-checkbox.disabled {
-  background: #fff url(../images/checkbox.png) no-repeat 2px 4px;
+  background: #ffffff url(../images/checkbox.png) no-repeat 2px 4px;
   background-size: 14px 31px;
 }
 .pwn-checkbox.inverse {
@@ -1837,11 +1835,11 @@ label.radio.reverse .pwn-radio {
   cursor: pointer;
 }
 .pwn-radio.checked {
-  background: #fff url(../images/checkbox.png) no-repeat 2px 4px;
+  background: #ffffff url(../images/checkbox.png) no-repeat 2px 4px;
   background-size: 14px 31px;
 }
 .pwn-radio.disabled {
-  background: #fff url(../images/checkbox.png) no-repeat 2px 4px;
+  background: #ffffff url(../images/checkbox.png) no-repeat 2px 4px;
   background-size: 14px 31px;
 }
 .pwn-radio.inverse {
@@ -1931,8 +1929,8 @@ label.radio.reverse .pwn-radio {
 }
 .pwn-select .pwn-select-arrow {
   display: block;
-  position: relative;
-  float: left;
+  position: absolute;
+  right: 0;
   height: 39px;
   width: 31px;
   background: #26a9e0 url(../images/select-arrow.png) 5px 2px no-repeat;
