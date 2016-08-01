@@ -19,7 +19,7 @@ module.exports = function( grunt ) {
 		},
 		uglify: {
 			options: {
-				preserveComments: "some"
+				preserveComments: /^!/
 			}, build: {
 				files: {
 					"dist/js/pwn.min.js": ["dist/js/pwn.js"]
